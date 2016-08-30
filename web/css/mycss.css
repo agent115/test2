@@ -1,0 +1,44 @@
+.service-wrapper{
+    float: left;
+    min-height: 170px;
+    min-width: 350px;
+    max-height:170px;
+}
+.img {
+    width: 45px;
+   
+}
+#logo{
+    width: 300px;
+}
+
+@media only screen and (min-width:241px) and (max-width:480px) { 
+ .service-wrapper{
+    max-width: 150px;
+}
+#poisc{
+    width:200px;
+}
+
+
+
+.btn{
+    text-align:center;
+    margin-left: 10px;
+}
+}
+
+
+@media only screen and (min-width:480px) and (max-width:780px) { 
+ 
+#poisc{
+    width:300px;
+}
+ .service-wrapper{
+   margin-left: 80px;
+}
+
+
+
+
+}
