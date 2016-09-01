@@ -13,16 +13,10 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-<div class="form-group field-category-parent_id has-success">
-        <label class="control-label" for="category-parent_id">Категория</label>
-        <select id="category-parent_id" class="form-control" name="Category[parent_id]">
-            <option value="0">Самостоятельная категория</option>
-                
-        </select>
-    </div>
-    <!-- <?= $form->field($model, 'category_id')->textInput(['maxlength' => true]) ?> -->
 
 
+
+    <?= $form->field($model, 'category_id')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\Organizat::find()->all(), 'id', 'name'))?>
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>

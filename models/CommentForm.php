@@ -4,20 +4,20 @@ namespace app\models;
 
 use Yii;
 use yii\base\Model;
- use yii\swiftmailer\Mailer;
+use yii\swiftmailer\Mailer;
 /**
  * ContactForm is the model behind the contact form.
  */
-class ContactForm extends Model
+class CommentForm extends Model
 {
-
+    public $comment_id;
     public $name;
     public $email;
     public $subject;
     public $body;
     public $verifyCode;
     public $nomer;
-    
+
 
     /**
      * @return array the validation rules.
@@ -54,10 +54,10 @@ class ContactForm extends Model
      * @param string $email the target email address
      * @return boolean whether the model passes validation
      */
-     
+
     public function contact($email)
     {
-        
+
         if ($this->validate()) {
             Yii::$app->mailer->compose()
                 ->setTo($email)
@@ -65,7 +65,7 @@ class ContactForm extends Model
                 ->setSubject($this->subject)
                 ->setSubject($this->nomer)
                 ->setTextBody($this->body)
-                
+
                 ->send();
 
             return true;

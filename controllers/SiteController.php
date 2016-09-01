@@ -7,6 +7,7 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
+use app\models\CommentForm;
 use app\models\Login;
 use app\models\ContactForm;
 use app\models\Signup;
@@ -125,6 +126,7 @@ class SiteController extends Controller
     public function actionContact()
     {
           $model = new ContactForm();
+
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['agent1156@yandex.ru'])) {
             Yii::$app->session->setFlash('contactFormSubmitted');
           
@@ -158,6 +160,25 @@ class SiteController extends Controller
             }
         }
         return $this->render('contact', compact('model'))*/;
+    }
+
+    public function actionComment()
+    {
+        $model = new CommentForm();
+
+        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['agent1156@yandex.ru'])) {
+            $model->comment_id = Yii::$app->request->get('comment_id');
+            Yii::$app->session->setFlash('contactFormSubmitted');
+
+            return $this->refresh();
+        }
+        return $this->render('contact', [
+            'model' => $model,
+        ]);
+
+
+
+
     }
     
 
