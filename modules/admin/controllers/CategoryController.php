@@ -1,7 +1,7 @@
 <?php
 
 namespace app\modules\admin\controllers;
-
+use app\models\Users;
 use Yii;
 use app\modules\admin\models\Category;
 use yii\data\ActiveDataProvider;
@@ -39,9 +39,9 @@ class CategoryController extends Controller
             'query' => Category::find(),
         ]);
 
-        return $this->render('index', [
+        return $this->render('index', compact('dataProvider') /*[
             'dataProvider' => $dataProvider,
-        ]);
+        ]*/);
     }
 
     /**

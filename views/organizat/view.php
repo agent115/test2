@@ -1,9 +1,14 @@
+<?php
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+
+?>
 <?php foreach($organization as $ord):?>
                             
 					
 						 <title> <?=$ord->name?></title> 
 					<?php endforeach;?>
-<?php use yii\helpers\Html;?>
+
 <?php $this->title='Организации';?>
 
 
@@ -55,21 +60,71 @@
 	</div>
 	<div id="com" class="container ">
 	    <div class="row">
-	        <div class="col-md-offset-3">
+	        <div class="col-md-6 col-md-offset-3">
+
+
+				<h3>Отзывы к товару (<?php print_r($counts)?>)</h3>
+				<hr>
+
+
+				<?php foreach ($comments as $commi):?>
+
+
+
+					<span id="time"><?= $commi->created?><br/></span>
+
+					<span id="comment_author"> <?= $commi->comment_author?></span><br/>
+					<div id="comment_text"> <?= $commi->comment_text?></div><br/>
+
+
+					<hr>
+
+				<?php endforeach;?>
+
+
 	<?php if(!Yii::$app->user->isGuest):?>
-<!-- Put this script tag to the <head> of your page -->
-<script type="text/javascript" src="//vk.com/js/api/openapi.js?127"></script>
+		<!--//получаем коммент к товару-->
 
-<script type="text/javascript">
-  VK.init({apiId: 5596481, onlyWidgets: true});
-</script>
 
-<!-- Put this div tag to the place, where the Comments block will be -->
-<div id="vk_comments"></div>
-<script type="text/javascript">
-VK.Widgets.Comments("vk_comments", {redesign: 1, limit: 10, width: "600", attach: "*"});
-</script>
-  <?php else:?>
+
+
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+
+							<?php if(Yii::$app->session->hasFlash('success')):?>
+								<?= Yii::$app->session->getFlash('success')?>
+							<?php endif;?>
+
+                            <?php $form = ActiveForm::begin(); ?>
+
+
+
+                            <?= $form->field($model, 'comment_text')->textarea(['rows'=>5]) ?>
+
+                            <div class="form-group">
+                                <?= Html::submitButton('ДОБАВИТЬ', ['class' => 'btn btn-primary']) ?>
+                            </div>
+
+                            <?php ActiveForm::end(); ?>
+
+
+							</div>
+								</div>
+									</div>
+
+
+
+
+
+
+
+
+
+
+
+	<?php else:?>
 
           <h3>Комментарии, <span style="color:red;">вы не зарегестрированный</span></h3>                                                                      
        <?php endif;?>

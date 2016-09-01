@@ -44,7 +44,9 @@ AppAsset::register($this);
 							 <form method="get" action="<?= \yii\helpers\Url::to(['category/search'])?>">
                             <input type="text" placeholder="ПОИСК" name="q">
                         </form>
-			        		<li><a href="<?= \yii\helpers\Url::to(['/site/login']) ?>">Вход</a></li>
+<?php if( \Yii::$app->user->identity->username == 'Manager'):?>
+			        		<li><a href="<?= \yii\helpers\Url::to(['/admin']) ?>">Admin</a></li>
+	<?php endif;?>
 			        		<li><a href="<?= \yii\helpers\Url::to(['/rbac/user/login']) ?>">RBAC</a></li>
                                                   <?php if(!Yii::$app->user->isGuest): ?>
     <li><a href="<?= yii\helpers\Url::to(['/site/logout'])?>"><i class="fa fa-user"></i>  <?= Yii::$app->user->identity['username']?> (Выход)</a></li>

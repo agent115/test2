@@ -9,8 +9,7 @@ use yii\grid\GridView;
 
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-
-
+<?php if( \Yii::$app->user->identity->username == 'Manager'):?>
 <div class="category-index container">
 <title>Админка</title>
     <h1><?= Html::encode($this->title) ?></h1>
@@ -36,3 +35,7 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]); ?>
 </div>
+    <?php else:?>
+   <?php \yii\helpers\Url::home()?>
+  <h1>Ты не АДМИН</h1>
+<?endif;?>

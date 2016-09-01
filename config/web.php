@@ -9,6 +9,9 @@ $config = [
     'language' => 'ru-RU',
     'defaultRoute' => 'category/index',
      'modules' => [
+         'comment' => [
+             'class' => 'yii2mod\comments\Module'
+         ],
         'admin' => [
             'class' => 'app\modules\admin\Module',
             'layout' => 'admin',

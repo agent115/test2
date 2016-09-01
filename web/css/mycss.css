@@ -12,6 +12,35 @@
     width: 300px;
 }
 
+#time{
+    color: #979797;
+    font-size: 10px;
+    float: right;
+}
+#comment_author{
+    color:dodgerblue;
+    background-color: #979797;
+    padding-left: 30px;
+    margin:10px ;
+    font-size: 20px;
+    padding-right: 30px;
+    border-radius: 10px;
+    text-align: center;
+
+
+    height: 40px;
+}
+.comm-parent{
+    margin-left: 40px;
+}
+
+#comment_text{
+    margin-top: 5px;
+    background: #fc0; /* Цвет фона */
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+}
+
 @media only screen and (min-width:241px) and (max-width:480px) { 
  .service-wrapper{
     max-width: 150px;
@@ -27,6 +56,7 @@
     margin-left: 10px;
 }
 }
+
 
 
 @media only screen and (min-width:480px) and (max-width:780px) { 

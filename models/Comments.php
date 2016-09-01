@@ -43,6 +43,9 @@ class Comments extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+
+
+/*
     public function attributeLabels()
     {
         return [
@@ -50,10 +53,21 @@ class Comments extends \yii\db\ActiveRecord
             'comment_author' => 'Comment Author',
             'comment_text' => 'Comment Text',
             'parent_id' => 'Parent ID',
-            'comment_product' => 'Comment Product',
+            'comment_product' => 'Организация',
             'approved' => 'Approved',
             'created' => 'Created',
             'is_admin' => 'Is Admin',
         ];
     }
+    public function signup()
+    {
+        $user = new Comments();
+        $user->comment_author = $this->comment_author;
+        $user->comment_text = $this->comment_text;
+        $user->comment_product = $this->comment_product;
+        $user->save();
+    }
+
+    */
+
 }

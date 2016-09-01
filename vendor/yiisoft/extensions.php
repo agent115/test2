@@ -66,4 +66,49 @@ return array (
       '@mdm/admin' => $vendorDir . '/mdmsoft/yii2-admin',
     ),
   ),
+  'asofter/yii2-imperavi-redactor' => 
+  array (
+    'name' => 'asofter/yii2-imperavi-redactor',
+    'version' => '0.0.3.0',
+    'alias' => 
+    array (
+      '@yii/imperavi' => $vendorDir . '/asofter/yii2-imperavi-redactor/yii/imperavi',
+    ),
+  ),
+  'yii2mod/yii2-enum' => 
+  array (
+    'name' => 'yii2mod/yii2-enum',
+    'version' => '1.4.0.0',
+    'alias' => 
+    array (
+      '@yii2mod/enum' => $vendorDir . '/yii2mod/yii2-enum',
+    ),
+  ),
+  'yii2mod/yii2-editable' => 
+  array (
+    'name' => 'yii2mod/yii2-editable',
+    'version' => '1.1.4.0',
+    'alias' => 
+    array (
+      '@yii2mod/editable' => $vendorDir . '/yii2mod/yii2-editable',
+    ),
+  ),
+  'yii2mod/yii2-behaviors' => 
+  array (
+    'name' => 'yii2mod/yii2-behaviors',
+    'version' => '1.1.0.0',
+    'alias' => 
+    array (
+      '@yii2mod/behaviors' => $vendorDir . '/yii2mod/yii2-behaviors',
+    ),
+  ),
+  'yii2mod/yii2-comments' => 
+  array (
+    'name' => 'yii2mod/yii2-comments',
+    'version' => '1.3.0.0',
+    'alias' => 
+    array (
+      '@yii2mod/comments' => $vendorDir . '/yii2mod/yii2-comments',
+    ),
+  ),
 );
