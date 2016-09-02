@@ -44,7 +44,12 @@ use yii\widgets\ActiveForm;
 						<p><i class="glyphicon glyphicon-map-marker"></i>Адрес:<?= $ord->adress?></p>
 						<p><i class="glyphicon glyphicon-time"></i>График:<?= $ord->grafic?></p>
 						<pre><?=$ord->keywords?></pre>
-						
+						<span><h3>Оценить <i class="glyphicon glyphicon-star" style="font-size: 15px;"></i>
+								<i class="glyphicon glyphicon-star" style="font-size: 18px;"></i>
+								<i class="glyphicon glyphicon-star" style="font-size: 20px;"></i>
+								<i class="glyphicon glyphicon-star" style="font-size: 23px;"></i>
+								<i class="glyphicon glyphicon-star" style="font-size: 26px;"></i></h3>
+						</span>
 					<?php endforeach;?>
 		
 					<?php endif;?>
