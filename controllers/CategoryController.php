@@ -5,6 +5,7 @@ use yii\data\Pagination;
 use app\controllers\AppController;
 use app\models\Category;
 use app\models\Organizat;
+use app\models\Ip;
 
 use Yii;
 class CategoryController extends AppController{
@@ -20,7 +21,48 @@ class CategoryController extends AppController{
     }
     
     function  actionView(){
+  echo $ip = "12.22.22.2";
+       /* Item::updateAll([
+            'id_group' => $newID,
+            'in_group' => '[[in_group]] + $delta',
+        ], ['=', 'id_group', $oldID]);*/
+
+        $id_star = Yii::$app->request->get('id_star');
+        $star = Yii::$app->request->get('star');
+        print_r($id_star);
+        print_r($star);
+         $stars = new Organizat();
+
+        if ((Yii::$app->request->get('id_star'))){
+            if((Yii::$app->request->get('star'))){
+
+                $stars = Organizat::updateAllCounters([
+                    'raiting' =>  $star ,
+                    'rait_count' => 1],[
+
+                        'id'=> $id_star]
+
+                );
+
+            }
+    };
+
+    $ipsave = new Ip();
+        if(Yii::$app->request->get('id_star')){
+            if(Yii::$app->request->get('star')){
+                $ipsave->ip = $ip;
+                $ipsave->article_id = $id_star;
+                $ipsave->save();
+            }
+        }
+
+
+
        $id = Yii::$app->request->get('id');
+        $articlesid = Ip::find()->select(['article_id'])->all();
+         $ip =  $_SERVER['REMOTE_ADDR'];
+        $ip = Ip::find()->select(['article_id'])->where(['ip'=>$ip])->where(['article_id'=>$articlesid])->all();
+
        $organization = Organizat::find()->where(['Category_id' => $id])->all();
        $category = Category::find()->where(['id' => $id])->all();
         return $this->render('view', compact('organization','category'));

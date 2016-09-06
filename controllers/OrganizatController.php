@@ -7,6 +7,7 @@ use app\models\Organizat;
 use app\models\Comment;
 use app\models\Comments;
 use app\models\Arrcom;
+use app\models\Raitip;
 use app\models\Testform;
 use yii\db\ActiveRecord;
 
@@ -40,10 +41,17 @@ class OrganizatController extends AppController{
                );
         }
 
+        $Models = new Raitip;
+        $Models->stati_id = Yii::$app->request->post('id');
+        $Models->ip = Yii::$app->request->post('rate');
+
+
+
         $idd = Yii::$app->request->get('idd');
-        $organization = Organizat::find()->where(['id' => $id])->all();
+        $organization = Organizat::find()->where(['id' => $id])->orderBy(['raiting'=>SORT_ASC])->all();
         $Category = Category::find()->all();
         $categ = Category::find()->where(['id' => $idd])->all();
+
         return $this->render('view', compact('organization','Category','categ','comments','model','counts'));
 
     }

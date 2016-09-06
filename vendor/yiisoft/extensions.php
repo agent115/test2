@@ -111,4 +111,31 @@ return array (
       '@yii2mod/comments' => $vendorDir . '/yii2mod/yii2-comments',
     ),
   ),
+  'yii2mod/yii2-star-rating' => 
+  array (
+    'name' => 'yii2mod/yii2-star-rating',
+    'version' => '1.0.0.0',
+    'alias' => 
+    array (
+      '@yii2mod/rating' => $vendorDir . '/yii2mod/yii2-star-rating',
+    ),
+  ),
+  'kartik-v/yii2-krajee-base' => 
+  array (
+    'name' => 'kartik-v/yii2-krajee-base',
+    'version' => '1.8.7.0',
+    'alias' => 
+    array (
+      '@kartik/base' => $vendorDir . '/kartik-v/yii2-krajee-base',
+    ),
+  ),
+  'kartik-v/yii2-widget-rating' => 
+  array (
+    'name' => 'kartik-v/yii2-widget-rating',
+    'version' => '1.0.2.0',
+    'alias' => 
+    array (
+      '@kartik/rating' => $vendorDir . '/kartik-v/yii2-widget-rating',
+    ),
+  ),
 );

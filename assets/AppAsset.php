@@ -24,7 +24,8 @@ class AppAsset extends AssetBundle
             'text/css',
               "css/leaflet.ie.css" ,
             "css/main.css",
-        "css/mycss.css"
+        "css/mycss.css",
+        "css/Ratingjquery.css"
     ];
     public $js = [
         "js/modernizr-2.6.2-respond-1.1.0.min.js",
@@ -41,7 +42,10 @@ class AppAsset extends AssetBundle
         'js/js.js',
         'js/java.js',
         'js/main.js',
-        'js/java1.js'
+        'js/java1.js',
+        'js/jRatingjquery.js',
+        'js/jRating.js',
+        //'js/jquery-1.6.2.min.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

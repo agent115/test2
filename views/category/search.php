@@ -6,7 +6,7 @@ use yii\helpers\Html;
 ?>
 <section id="advertisement">
     <div class="container">
-        <img src="/images/shop/1.jpg" alt="" />
+
     </div>
 </section>
 
@@ -32,7 +32,10 @@ use yii\helpers\Html;
   </ul>-->              <ol>
                                 <li>
                                   <h3><a href="<?= \yii\helpers\Url::to(['organizat/view', 'id' => $prod['id']]) ?>">- <?= $prod->name; ?></a></h3>
-                                  </li></ol>
+                                  </li>
+
+                                        </ol>
+
                                      
 	        			
 		        			
@@ -41,7 +44,7 @@ use yii\helpers\Html;
                                     </div>
                                 </div>
                             </div>
-                                    
+
 	        		</div>
                             <?php $i++?>
                             <?php if($i % 3 == 0): ?>
@@ -50,7 +53,7 @@ use yii\helpers\Html;
                         <?php endforeach;?>
                         <hr>
                         <div class="clearfix"></div>
-                        
+
                     <?php else :?>
                         <h2>Ничего не найдено...</h2>
                     <?php endif;?>

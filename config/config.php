@@ -16,6 +16,7 @@ $params = require(__DIR__ . '/params.php');
             'class' => 'yii\swiftmailer\Mailer'
             ]
 ]
+$ip = $_SERVER['REMOTE_ADDR'];
 //.....
 'params => $params,
 //....

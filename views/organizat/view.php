@@ -68,7 +68,7 @@ use yii\widgets\ActiveForm;
 	        <div class="col-md-6 col-md-offset-3">
 
 
-				<h3>Отзывы к товару (<?php print_r($counts)?>)</h3>
+				<h3>Отзывы к организации (<?php print_r($counts)?>)</h3>
 				<hr>
 
 
@@ -83,6 +83,7 @@ use yii\widgets\ActiveForm;
 					<hr>
 
 				<?php endforeach;?>
+
 
 
 	<?php if(!Yii::$app->user->isGuest):?>

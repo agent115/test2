@@ -18,7 +18,7 @@
     float: right;
 }
 #comment_author{
-    color: dodgerblue;
+    color: #fff;
     background-color: #979797;
     padding-left: 30px;
     margin:10px ;
@@ -36,12 +36,37 @@
     margin-left: 40px;
 }
 
+
+
 #comment_text{
     margin-top: 5px;
-    background: #fc0; /* Цвет фона */
+    background: #e5b71f; /* Цвет фона */
     box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Параметры тени */
     padding: 10px;
 }
+
+.rating > a:hover:before {
+    content: "\2605";
+    position: absolute;
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    font-size: 20px;
+}
+.rating > a {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+.rating > a:hover:before,
+.rating > a:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+    color:  #e5b71f;;
+}
+
+
 
 @media only screen and (min-width:241px) and (max-width:480px) { 
  .service-wrapper{
