@@ -21,7 +21,8 @@ class CategoryController extends AppController{
     }
     
     function  actionView(){
-  echo $ip = "12.22.22.2";
+   $ip = $_SERVER["REMOTE_ADDR"];
+
        /* Item::updateAll([
             'id_group' => $newID,
             'in_group' => '[[in_group]] + $delta',
@@ -29,8 +30,8 @@ class CategoryController extends AppController{
 
         $id_star = Yii::$app->request->get('id_star');
         $star = Yii::$app->request->get('star');
-        print_r($id_star);
-        print_r($star);
+        //print_r($id_star);
+        //print_r($star);
          $stars = new Organizat();
 
         if ((Yii::$app->request->get('id_star'))){
@@ -54,18 +55,20 @@ class CategoryController extends AppController{
                 $ipsave->article_id = $id_star;
                 $ipsave->save();
             }
-        }
+        };
+
+        $ip_load = Ip::find()->select(['article_id'])->where(['ip'=>$ip])->asArray()->all();
 
 
 
        $id = Yii::$app->request->get('id');
         $articlesid = Ip::find()->select(['article_id'])->all();
-         $ip =  $_SERVER['REMOTE_ADDR'];
-        $ip = Ip::find()->select(['article_id'])->where(['ip'=>$ip])->where(['article_id'=>$articlesid])->all();
+        // $ip =  $_SERVER['REMOTE_ADDR'];
+        //$ip = Ip::find()->select(['article_id'])->where(['ip'=>$ip])->asArray()->all();
 
        $organization = Organizat::find()->where(['Category_id' => $id])->all();
        $category = Category::find()->where(['id' => $id])->all();
-        return $this->render('view', compact('organization','category'));
+        return $this->render('view', compact('organization','category','ip_load'));
      
     }
     

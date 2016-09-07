@@ -44,7 +44,7 @@ class Login extends Model
         if (!$this->hasErrors()) {
             $user = $this->getUser();
             if (!$user || !$user->validatePassword($this->password)) {
-                $this->addError($attribute, 'Incorrect username or password.');
+                $this->addError($attribute, 'Логин/пароль введены не верно');
             }
         }
     }
@@ -61,6 +61,14 @@ class Login extends Model
         } else {
             return false;
         }
+    }
+
+    public function attributeLabels(){
+        return [
+            'username' => 'Логин',
+            'password' => 'Маил',
+            'rememberMe' => 'Запомнить',
+        ];
     }
 
     /**

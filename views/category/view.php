@@ -1,9 +1,11 @@
 <?php
 use app\models\Ip;
+use yii\helpers\ArrayHelper;
+use app\models\Organizat;
 ?>
 <title>Организации</title>
 <script type="javascript">
-    var $ip = '<?=$ip;?>';
+	if
 </script>
 <div id="res"></div>
 <?php
@@ -25,26 +27,40 @@ use app\models\Ip;
 				<?php if(!empty($organization)):?>
 						<?php foreach($organization as $ord):?>
 						<h3><a href="<?=  \yii\helpers\Url::to(['organizat/view', 'id'=>$ord->id, 'idd'=>$idd])?>"><?=$ord->name?></a></h3>
+
 						<p><i class="glyphicon glyphicon-earphone"> </i>Телефон:<?= $ord->phone?></p>
 						<p><i class="glyphicon glyphicon-earphone"> </i>Телефон:<?= $ord->phone_2?></p>
 						<p><i class="glyphicon glyphicon-map-marker"> </i>Адрес:<?= $ord->adress?></p>
 						<p><i class="glyphicon glyphicon-time"> </i>График:<?= $ord->grafic?></p>
-						<div>Оцените организацию:
+						<div><b>Оцените организацию<i class="glyphicon glyphicon-arrow-down"></i></b>
+
 							<?php
-							if (!Yii::$app->user->isGuest){
-								echo'<div class="posthide">
 
 
-									<a  href="<?=$_SERVER[\'HTTPS\']?>?id_star=<?=$ord->id?>&star=1" class="href" title="1" style="font-size: 15px"><i class="glyphicon glyphicon-star"></i> </a>
-									<a  href="<?=$_SERVER[\'HTTPS\']?>?id_star=<?=$ord->id?>&star=2" class="href" title="2" style="font-size: 18px"><i class="glyphicon glyphicon-star"></i> </a>
-									<a  href="<?=$_SERVER[\'HTTPS\']?>?id_star=<?=$ord->id?>&star=3" class="href" title="3" style="font-size: 21px"><i class="glyphicon glyphicon-star"></i> </a>
-									<a  href="<?=$_SERVER[\'HTTPS\']?>?id_star=<?=$ord->id?>&star=4" class="href" title="4" style="font-size: 24px"><i class="glyphicon glyphicon-star"></i> </a>
-									<a  href="<?=$_SERVER[\'HTTPS\']?>?id_star=<?=$ord->id?>&star=5" class="href" title="5" style="font-size: 27px"><i class="glyphicon glyphicon-star"></i> </a>
 
-								</div>';
-
-							}
 							?>
+
+								<?php  $asb = $ip_load->article_id?>
+
+
+
+
+							<?php
+
+							//print_r($result);
+
+							$accessVote = 1; // флаг глосования: 1 - разрешено, 0 - запрещено
+							$ip = $_SERVER["REMOTE_ADDR"];
+							$result = Ip::find()->where(['article_id'=>$ord->id, 'ip'=>$ip])->one();
+
+
+							if ($result->article_id == $ord->id){
+								$accessVote = 0;
+							};
+							//print_r($result) ;
+							//echo $accessVote;
+							?>
+                        <?php if(!$accessVote == 0):?>
 								<div class="posthide">
 
 
@@ -55,26 +71,22 @@ use app\models\Ip;
 									<a  href="<?=$_SERVER['HTTPS']?>?id_star=<?=$ord->id?>&star=5" class="href" title="5" style="font-size: 27px"><i class="glyphicon glyphicon-star"></i> </a>
 
 								</div>
-								<?php echo $_POST['idBox']?>
-							<span style="">
 
-							</span>
+							<?php endif;?>
+							<?php if($accessVote == 0):?>
+								<div class="posthide">
 
-								<?php $ip = Ip::find()->select(['article_id'])->where(['ip'=>$ip])->where(['article_id'=>$articlesid])->all();
+									<?= "<p class=\"bg-primary\">Оценка поставлена</p>"?>
+
+								</div>
+
+							<?php endif;?>
 
 
-								?>
 
-							<?php $pp = implode (',',$ip);?>
-							<?php $ppp = array()?>
-							<?php $ppp[] = $pp?>
-							<?php
 
-							$accessVote = 1;
-							if(in_array($ord->id, $ppp)){
-								$accessVote = 0;
-							};
-							?>
+
+
 
 
 							<!--<span class="access"><?/*= $accessVote*/?></span>
@@ -104,9 +116,9 @@ use app\models\Ip;
 							<?php ?>
 
 
+							<div class="basic" data-average="<?=$row?>" data-id="<?= $ord->id?>"></div>
 
-						<?php echo"<div class='basic' data-average='$row' data-id='".$ord['id']."'></div>";?><?=$ord->rait_count ?>
-
+							<?php// echo"<div class='basic' data-average='$row' data-id='".$ord['id']."'></div>";?>
 
 
 

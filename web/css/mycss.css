@@ -36,8 +36,21 @@
     margin-left: 40px;
 }
 
+.basic{
+    float: right;
+    position: absolute;
+    bottom: 220px;
+     pointer-events: none; /* делаем ссылку некликабельной */
+     cursor: default;
 
-
+}
+.btn a{
+    color: #fff;
+}
+.bg-primary{
+    padding: 12px;
+    border-radius: 20px;
+}
 #comment_text{
     margin-top: 5px;
     background: #e5b71f; /* Цвет фона */

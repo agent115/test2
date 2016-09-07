@@ -22,13 +22,13 @@ class Signup extends Model
         return [
             ['username', 'filter', 'filter' => 'trim'],
             ['username', 'required'],
-            ['username', 'unique', 'targetClass' => 'mdm\admin\models\User', 'message' => 'This username has already been taken.'],
+            ['username', 'unique', 'targetClass' => 'mdm\admin\models\User', 'message' => 'Имя занято'],
             ['username', 'string', 'min' => 2, 'max' => 255],
 
             ['email', 'filter', 'filter' => 'trim'],
             ['email', 'required'],
             ['email', 'email'],
-            ['email', 'unique', 'targetClass' => 'mdm\admin\models\User', 'message' => 'This email address has already been taken.'],
+            ['email', 'unique', 'targetClass' => 'mdm\admin\models\User', 'message' => 'Маил занят'],
 
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
@@ -54,5 +54,12 @@ class Signup extends Model
         }
 
         return null;
+    }
+    public function attributeLabels(){
+        return [
+            'username' => 'Имя',
+            'email' => 'Маил',
+            'password' => 'пароль',
+        ];
     }
 }

@@ -30,7 +30,7 @@ class Organizat extends \yii\db\ActiveRecord
         return 'organizat';
     }
      public function getCategory(){
-        return $this->hasOne(Category::className(),['id'=>'category_id']);
+        return $this->hasOne(Organizat::className(),['id'=>'category_id']);
     }
 
     /**
