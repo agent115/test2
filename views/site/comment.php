@@ -34,19 +34,19 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
-                <?php $form->field($model, 'comment_id') ?>
+                <?php $form->field($modelp, 'comment_id') ?>
 
-                <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
+                <?= $form->field($modelp, 'name')->textInput(['autofocus' => true]) ?>
 
-                <?= $form->field($model, 'email') ?>
+                <?= $form->field($modelp, 'email') ?>
 
-                <?= $form->field($model, 'nomer') ?>
+                <?= $form->field($modelp, 'nomer') ?>
 
-                <?= $form->field($model, 'subject') ?>
+                <?= $form->field($modelp, 'subject') ?>
 
-                <?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
+                <?= $form->field($modelp, 'body')->textArea(['rows' => 6]) ?>
 
-                <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
+                <?= $form->field($modelp, 'verifyCode')->widget(Captcha::className(), [
                     'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
                 ]) ?>
 

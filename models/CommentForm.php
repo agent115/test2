@@ -43,8 +43,8 @@ class CommentForm extends Model
         return [
             'verifyCode' => 'Введите ключ',
             'name'=>'Имя',
-            'body'=>'Описание организации',
-            'subject'=>'Наименование организации',
+            'body'=>'Описание жалобы',
+            'subject'=>'Наименование ',
             'nomer'=>'Контактрый телефон'
         ];
     }
@@ -57,13 +57,14 @@ class CommentForm extends Model
 
     public function contact($email)
     {
-
+        $comment_id = Yii::$app->request->get('comment_id');
         if ($this->validate()) {
             Yii::$app->mailer->compose()
-                ->setTo($email)
+                ->setTo("agent1156@yandex.ru")
                 ->setFrom('agent1156@yandex.ru')
-                ->setSubject($this->subject)
-                ->setSubject($this->nomer)
+                ->setTextBody($this->subject)
+                ->setTextBody($this->nomer)
+                ->setTextBody($this->comment_id)
                 ->setTextBody($this->body)
 
                 ->send();

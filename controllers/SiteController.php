@@ -136,8 +136,8 @@ class SiteController extends Controller
         return $this->render('contact', [
             'model' => $model,
         ]);
-        
-        
+
+
         
         /*  $session = Yii::$app->session;
         $session->open();
@@ -192,20 +192,32 @@ class SiteController extends Controller
 
     public function actionComment()
     {
-        $model = new CommentForm();
+        $modelp = new CommentForm();
 
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['agent1156@yandex.ru'])) {
-            $model->comment_id = Yii::$app->request->get('comment_id');
+        if ($modelp->load(Yii::$app->request->post()) && $modelp->contact(Yii::$app->params['agent1156@yandex.ru'])) {
+            $modelp->comment_id = Yii::$app->request->get('comment_id');
             Yii::$app->session->setFlash('contactFormSubmitted');
 
             return $this->refresh();
         }
         return $this->render('contact', [
-            'model' => $model,
+            'model' => $modelp,
         ]);
 
 
 
 
+    }
+
+    public function actionCom(){
+        $modelcom = new CommentForm();
+
+        if ($modelcom->load(Yii::$app->request->post()) && $modelcom->contact(Yii::$app->params['agent1156@yandex.ru'])) {
+            $modelcom->comment_id = Yii::$app->request->get('comment_id');
+            Yii::$app->session->setFlash('contactFormSubmitted');
+
+            return $this->refresh();
+        }
+        return $this->render('com',compact('modelcom'));
     }
 }

@@ -3,20 +3,17 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
-
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\Organizat */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="organizat-form container">
+<div class="organizat-form">
 
     <?php $form = ActiveForm::begin(); ?>
 
+    <?= $form->field($model, 'category_id')->textInput(['maxlength' => true]) ?>
 
-
-
-    <?= $form->field($model, 'category_id')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\Organizat::find()->all(), 'id', 'name'))?>
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
@@ -25,7 +22,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'adress')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'mars')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'mars')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'grafic')->textInput(['maxlength' => true]) ?>
 

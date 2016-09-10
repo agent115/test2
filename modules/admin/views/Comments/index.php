@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Comments', ['create'], ['class' => 'btn btn-success']) ?>
+
         <button  type="button" class="btn btn-primary"><a href="<?= \yii\helpers\Url::to(['category/index'])?>">Категории</a></button>
 
         <button  type="button" class="btn btn-primary"><a href="<?= \yii\helpers\Url::to(['organizat/index'])?>">Организации</a></button>

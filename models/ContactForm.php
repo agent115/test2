@@ -60,7 +60,7 @@ class ContactForm extends Model
         
         if ($this->validate()) {
             Yii::$app->mailer->compose()
-                ->setTo($email)
+                ->setTo("agent1156@yandex.ru")
                 ->setFrom('agent1156@yandex.ru')
                 ->setSubject($this->subject)
                 ->setSubject($this->nomer)

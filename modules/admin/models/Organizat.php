@@ -19,6 +19,7 @@ use Yii;
  * @property string $description
  * @property string $logo
  * @property string $images
+ * @property string $maps
  */
 class Organizat extends \yii\db\ActiveRecord
 {
@@ -29,9 +30,6 @@ class Organizat extends \yii\db\ActiveRecord
     {
         return 'organizat';
     }
-     public function getCategory(){
-        return $this->hasOne(Organizat::className(),['id'=>'category_id']);
-    }
 
     /**
      * @inheritdoc
@@ -39,9 +37,10 @@ class Organizat extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['category_id', 'name', 'phone', ], 'required'],
+            [['category_id', 'phone', 'phone_2', 'adress', 'mars', 'grafic', 'keywords', 'description', 'logo', 'images', 'maps'], 'required'],
             [['category_id'], 'integer'],
-            [['name', 'phone', 'phone_2', 'adress', 'mars', 'grafic', 'keywords', 'description', 'logo', 'images'], 'string', 'max' => 255],
+            [['mars'], 'string'],
+            [['name', 'phone', 'phone_2', 'adress', 'grafic', 'keywords', 'description', 'logo', 'images', 'maps'], 'string', 'max' => 255],
         ];
     }
 

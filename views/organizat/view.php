@@ -71,7 +71,7 @@ use yii\widgets\ActiveForm;
 
 					<span id="time"><?= $commi->created?><br/></span>
 					<span id="comment_author"> <?= $commi->comment_author?></span>
-					<a href="<?= \yii\helpers\Url::to(['site/comment', 'com_id'=>$commi->comment_id])?>" title="Пожаловаться на комментарий"><i class="glyphicon glyphicon-eye-close"></i></a> <br/>
+					<a href="<?= \yii\helpers\Url::to(['site/com', 'com_id'=>$commi->comment_id])?>" title="Пожаловаться на комментарий"><i class="glyphicon glyphicon-eye-close"></i></a> <br/>
 					<div id="comment_text"> <?= $commi->comment_text?></div><br/>
 
 

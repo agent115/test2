@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/controllers/SiteController.php" line="168" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9e0a2140-dde9-4409-9068-dc6beac85fbe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/ComentForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/site/com.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/CategoryController.php" afterPath="$PROJECT_DIR$/controllers/CategoryController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/SiteController.php" afterPath="$PROJECT_DIR$/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/Module.php" afterPath="$PROJECT_DIR$/modules/admin/Module.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/CommentForm.php" afterPath="$PROJECT_DIR$/models/CommentForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/ContactForm.php" afterPath="$PROJECT_DIR$/models/ContactForm.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/Organizat.php" afterPath="$PROJECT_DIR$/modules/admin/models/Organizat.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/Comments/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/Comments/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/category/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/category/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/organizat/_form.php" afterPath="$PROJECT_DIR$/modules/admin/views/organizat/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/organizat/create.php" afterPath="$PROJECT_DIR$/modules/admin/views/organizat/create.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/organizat/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/organizat/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/organizat/view.php" afterPath="$PROJECT_DIR$/modules/admin/views/organizat/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/mdmsoft/yii2-admin/models/form/Login.php" afterPath="$PROJECT_DIR$/vendor/mdmsoft/yii2-admin/models/form/Login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/mdmsoft/yii2-admin/models/form/Signup.php" afterPath="$PROJECT_DIR$/vendor/mdmsoft/yii2-admin/models/form/Signup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/mdmsoft/yii2-admin/views/user/login.php" afterPath="$PROJECT_DIR$/vendor/mdmsoft/yii2-admin/views/user/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/mdmsoft/yii2-admin/views/user/signup.php" afterPath="$PROJECT_DIR$/vendor/mdmsoft/yii2-admin/views/user/signup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/category/view.php" afterPath="$PROJECT_DIR$/views/category/view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/organizat/view.php" afterPath="$PROJECT_DIR$/views/organizat/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/mycss.css" afterPath="$PROJECT_DIR$/web/css/mycss.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/comment.php" afterPath="$PROJECT_DIR$/views/site/comment.php" />
     </list>
     <ignored path="agent1156.myjino.ru.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,104 +40,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OrganizatController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/admin/controllers/OrganizatController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="209" column="5" selection-start-line="209" selection-start-column="5" selection-end-line="209" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comment.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/site/comment.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="20" column="48" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/admin/views/organizat/view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/admin/views/category/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/category/view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="27" column="51" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="51" />
+            <state relative-caret-position="294">
+              <caret line="215" column="74" selection-start-line="215" selection-start-column="23" selection-end-line="215" selection-end-column="74" />
               <folding>
-                <element signature="e#6#24#0#PHP" expanded="true" />
+                <element signature="e#35#43#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/admin/views/Comments/index.php">
+      <file leaf-file-name="ComentForm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/ComentForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="59" column="60" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Organizat.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/admin/models/Organizat.php">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="27" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="626">
+              <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/admin/views/organizat/index.php">
+      <file leaf-file-name="contact.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/site/contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="192">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrganizatController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/OrganizatController.php">
+      <file leaf-file-name="ContactForm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/ContactForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="170">
+              <caret line="57" column="2" selection-start-line="57" selection-start-column="2" selection-end-line="73" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentForm.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/CommentForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="com.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/site/com.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="38" column="42" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="42" />
+              <folding>
+                <element signature="e#121#142#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,9 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/modules/admin/controllers/CategoryController.php" />
-        <option value="$PROJECT_DIR$/controllers/Organizat_1Controller.php" />
-        <option value="$PROJECT_DIR$/models/Function.php" />
         <option value="$PROJECT_DIR$/models/Arrcom.php" />
         <option value="$PROJECT_DIR$/models/LoginForm.php" />
         <option value="$PROJECT_DIR$/models/Com.php" />
@@ -160,9 +131,6 @@
         <option value="$PROJECT_DIR$/modules/admin/views/category/create.php" />
         <option value="$PROJECT_DIR$/modules/admin/views/category/_form.php" />
         <option value="$PROJECT_DIR$/modules/admin/views/organizat/_form.php" />
-        <option value="$PROJECT_DIR$/models/ContactForm.php" />
-        <option value="$PROJECT_DIR$/models/CommentForm.php" />
-        <option value="$PROJECT_DIR$/views/site/comment.php" />
         <option value="$PROJECT_DIR$/config/web.php" />
         <option value="$PROJECT_DIR$/web/js/main.js" />
         <option value="$PROJECT_DIR$/web/js/js.js" />
@@ -189,16 +157,22 @@
         <option value="$PROJECT_DIR$/vendor/mdmsoft/yii2-admin/models/form/Signup.php" />
         <option value="$PROJECT_DIR$/vendor/mdmsoft/yii2-admin/views/user/login.php" />
         <option value="$PROJECT_DIR$/vendor/mdmsoft/yii2-admin/models/form/Login.php" />
-        <option value="$PROJECT_DIR$/views/organizat/view.php" />
         <option value="$PROJECT_DIR$/web/css/mycss.css" />
         <option value="$PROJECT_DIR$/modules/admin/views/organizat/view.php" />
         <option value="$PROJECT_DIR$/modules/admin/Module.php" />
-        <option value="$PROJECT_DIR$/modules/admin/models/Organizat.php" />
         <option value="$PROJECT_DIR$/views/category/view.php" />
-        <option value="$PROJECT_DIR$/modules/admin/views/category/index.php" />
         <option value="$PROJECT_DIR$/modules/admin/views/organizat/index.php" />
         <option value="$PROJECT_DIR$/modules/admin/views/Comments/index.php" />
+        <option value="$PROJECT_DIR$/modules/admin/views/category/index.php" />
+        <option value="$PROJECT_DIR$/modules/admin/models/Organizat.php" />
+        <option value="$PROJECT_DIR$/modules/admin/views/organizat/create.php" />
+        <option value="$PROJECT_DIR$/views/site/comment.php" />
+        <option value="$PROJECT_DIR$/views/site/com.php" />
+        <option value="$PROJECT_DIR$/views/organizat/view.php" />
+        <option value="$PROJECT_DIR$/models/ContactForm.php" />
         <option value="$PROJECT_DIR$/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/models/ComentForm.php" />
+        <option value="$PROJECT_DIR$/models/CommentForm.php" />
       </list>
     </option>
   </component>
@@ -243,6 +217,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+      </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -271,39 +249,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agent1156.myjino.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agent1156.myjino.ru" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agent1156.myjino.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agent1156.myjino.ru" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,10 +286,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="category" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -387,10 +333,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files" />
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -481,17 +423,18 @@
       <workItem from="1472975763384" duration="24079000" />
       <workItem from="1473065632512" duration="17982000" />
       <workItem from="1473147031028" duration="37788000" />
+      <workItem from="1473230982508" duration="5803000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156514000" />
+    <option name="totallyTimeSpent" value="162317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="7.320644E-4" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18229954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -553,37 +496,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/Comment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Open server/OpenServer/domains/agent1156.myjino.ru/web/js/jRating-master/jquery/jRating.jquery.css" />
-    <entry file="file://E:/Open server/OpenServer/domains/agent1156.myjino.ru/web/js/jRating-master/jquery/jquery.js" />
-    <entry file="file://$PROJECT_DIR$/web/js/jRating.jquery.js" />
-    <entry file="file://$PROJECT_DIR$/web/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Open server/OpenServer/domains/agent1156.myjino.ru/web/css/jRatingjquery.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/Ratingjquery.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -634,13 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/icomoon-social.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -660,7 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -689,7 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,7 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="63" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,7 +607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,7 +614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="34" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,7 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,7 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="50" column="90" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="90" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,7 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,7 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -753,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="65" column="0" selection-start-line="61" selection-start-column="33" selection-end-line="65" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,7 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -777,18 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/organizat/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <marker date="1473183961977" expanded="true" signature="1001:1562" ph="..." />
-            <marker date="1473183961977" expanded="true" signature="1047:1534" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -796,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="75" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,7 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,7 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,7 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="27" column="5" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,7 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,59 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="68" column="20" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="20" />
-          <folding>
-            <element signature="e#34#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/category/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="27" column="51" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="51" />
-          <folding>
-            <element signature="e#6#24#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/views/category/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/views/organizat/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/views/organizat/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/views/Comments/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/models/Organizat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="27" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,26 +732,152 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/views/organizat/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/category/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="51" />
+          <folding>
+            <element signature="e#6#24#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/OrganizatController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
+        <state relative-caret-position="119">
           <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
+    <entry file="file://$PROJECT_DIR$/modules/admin/views/organizat/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="209" column="5" selection-start-line="209" selection-start-column="5" selection-end-line="209" selection-end-column="5" />
+        <state relative-caret-position="156">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/views/Comments/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/views/category/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/models/Organizat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/views/organizat/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/LoginForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/site/comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="48" />
+        <state relative-caret-position="272">
+          <caret line="44" column="55" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/organizat/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="73" column="64" selection-start-line="73" selection-start-column="64" selection-end-line="73" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/ContactForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="57" column="2" selection-start-line="57" selection-start-column="2" selection-end-line="73" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/com.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="38" column="42" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="42" />
+          <folding>
+            <element signature="e#121#142#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="215" column="74" selection-start-line="215" selection-start-column="23" selection-end-line="215" selection-end-column="74" />
+          <folding>
+            <element signature="e#35#43#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/ComentForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="59" column="60" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/CommentForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
         </state>
       </provider>

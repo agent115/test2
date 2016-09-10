@@ -29,24 +29,19 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            /*'category_id',*/
-            ['attribute'=>'category_id',
-            'value'=>function($data){
-                return $data->Category->name;
-            },
-                ],
+            'category_id',
             'name',
             'phone',
             'phone_2',
             'adress',
-            'mars',
+            'mars:ntext',
             'grafic',
             'keywords',
             'description',
             'logo',
-            'images'
+            'images',
+            'maps',
         ],
-    ])
-    ?>
-</div>
+    ]) ?>
 
+</div>
