@@ -409,58 +409,6 @@
         ]
     },
     {
-        "name": "yiisoft/yii2-swiftmailer",
-        "version": "2.0.5",
-        "version_normalized": "2.0.5.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/yiisoft/yii2-swiftmailer.git",
-            "reference": "e2c6315caff30a9271a7afad4d684627721dc69a"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/e2c6315caff30a9271a7afad4d684627721dc69a",
-            "reference": "e2c6315caff30a9271a7afad4d684627721dc69a",
-            "shasum": ""
-        },
-        "require": {
-            "swiftmailer/swiftmailer": "~5.0",
-            "yiisoft/yii2": ">=2.0.4"
-        },
-        "time": "2016-03-17 03:58:49",
-        "type": "yii2-extension",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "yii\\swiftmailer\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Paul Klimov",
-                "email": "klimov.paul@gmail.com"
-            }
-        ],
-        "description": "The SwiftMailer integration for the Yii framework",
-        "keywords": [
-            "email",
-            "mail",
-            "mailer",
-            "swift",
-            "swiftmailer",
-            "yii2"
-        ]
-    },
-    {
         "name": "yiisoft/yii2-codeception",
         "version": "2.0.5",
         "version_normalized": "2.0.5.0",
@@ -1426,72 +1374,6 @@
         ]
     },
     {
-        "name": "symfony/translation",
-        "version": "v2.8.10",
-        "version_normalized": "2.8.10.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/translation.git",
-            "reference": "32b0c824da6df065f43b0c458dc505940e98a7f1"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/translation/zipball/32b0c824da6df065f43b0c458dc505940e98a7f1",
-            "reference": "32b0c824da6df065f43b0c458dc505940e98a7f1",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.9",
-            "symfony/polyfill-mbstring": "~1.0"
-        },
-        "conflict": {
-            "symfony/config": "<2.7"
-        },
-        "require-dev": {
-            "psr/log": "~1.0",
-            "symfony/config": "~2.8",
-            "symfony/intl": "~2.4|~3.0.0",
-            "symfony/yaml": "~2.2|~3.0.0"
-        },
-        "suggest": {
-            "psr/log": "To use logging capability in translator",
-            "symfony/config": "",
-            "symfony/yaml": ""
-        },
-        "time": "2016-07-30 07:20:35",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.8-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Translation\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Translation Component",
-        "homepage": "https://symfony.com"
-    },
-    {
         "name": "kartik-v/bootstrap-star-rating",
         "version": "v4.0.1",
         "version_normalized": "4.0.1.0",
@@ -1646,6 +1528,620 @@
             "star",
             "widget",
             "yii2"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2-swiftmailer",
+        "version": "2.0.6",
+        "version_normalized": "2.0.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-swiftmailer.git",
+            "reference": "26b900767f1031ff3a4668dfa36c10595875f0a5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/26b900767f1031ff3a4668dfa36c10595875f0a5",
+            "reference": "26b900767f1031ff3a4668dfa36c10595875f0a5",
+            "shasum": ""
+        },
+        "require": {
+            "swiftmailer/swiftmailer": "~5.0",
+            "yiisoft/yii2": "~2.0.4"
+        },
+        "time": "2016-09-09 11:48:11",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\swiftmailer\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Paul Klimov",
+                "email": "klimov.paul@gmail.com"
+            }
+        ],
+        "description": "The SwiftMailer integration for the Yii framework",
+        "keywords": [
+            "email",
+            "mail",
+            "mailer",
+            "swift",
+            "swiftmailer",
+            "yii2"
+        ]
+    },
+    {
+        "name": "symfony/translation",
+        "version": "v2.8.11",
+        "version_normalized": "2.8.11.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/translation.git",
+            "reference": "bf0ff95faa9b6c0708efc1986255e3608d0ed3c7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/translation/zipball/bf0ff95faa9b6c0708efc1986255e3608d0ed3c7",
+            "reference": "bf0ff95faa9b6c0708efc1986255e3608d0ed3c7",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9",
+            "symfony/polyfill-mbstring": "~1.0"
+        },
+        "conflict": {
+            "symfony/config": "<2.7"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/config": "~2.8",
+            "symfony/intl": "~2.4|~3.0.0",
+            "symfony/yaml": "~2.2|~3.0.0"
+        },
+        "suggest": {
+            "psr/log": "To use logging capability in translator",
+            "symfony/config": "",
+            "symfony/yaml": ""
+        },
+        "time": "2016-09-06 10:55:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.8-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Translation\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Translation Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "studio-42/elfinder",
+        "version": "2.1.14",
+        "version_normalized": "2.1.14.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Studio-42/elFinder.git",
+            "reference": "02c19ae09a36ec83a837b28eb5b232f5ce7b0bd9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/02c19ae09a36ec83a837b28eb5b232f5ce7b0bd9",
+            "reference": "02c19ae09a36ec83a837b28eb5b232f5ce7b0bd9",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2"
+        },
+        "suggest": {
+            "barryvdh/elfinder-flysystem-driver": "VolumeDriver for elFinder to use Flysystem as a root.",
+            "dropbox-php/dropbox-php": "elFinder Volume driver `Dropbox` require `dropbox-php/dropbox-php`.",
+            "nao-pon/flysystem-google-drive": "require in GoogleDrive network volume mounting.",
+            "pear/http_oauth": "dropbox-php require `pear/http_oauth` or `PHP OAuth extension`."
+        },
+        "time": "2016-07-25 00:34:19",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Dmitry Levashov",
+                "email": "dio@std42.ru",
+                "homepage": "http://std42.ru"
+            },
+            {
+                "name": "Troex Nevelin",
+                "email": "troex@fury.scancode.ru",
+                "homepage": "http://std42.ru"
+            },
+            {
+                "name": "Naoki Sawada",
+                "email": "hypweb@gmail.com",
+                "homepage": "http://xoops.hypweb.net"
+            },
+            {
+                "name": "Community contributions",
+                "homepage": "https://github.com/Studio-42/elFinder/contributors"
+            }
+        ],
+        "description": "File manager for web",
+        "homepage": "http://elfinder.org"
+    },
+    {
+        "name": "bower-asset/jquery-ui",
+        "version": "1.11.4",
+        "version_normalized": "1.11.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/components/jqueryui.git",
+            "reference": "c34f8dbf3ba57b3784b93f26119f436c0e8288e1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/components/jqueryui/zipball/c34f8dbf3ba57b3784b93f26119f436c0e8288e1",
+            "reference": "c34f8dbf3ba57b3784b93f26119f436c0e8288e1",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery": ">=1.6"
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": [
+                "jquery-ui.js"
+            ],
+            "bower-asset-ignore": []
+        },
+        "installation-source": "dist"
+    },
+    {
+        "name": "yiisoft/yii2-jui",
+        "version": "2.0.6",
+        "version_normalized": "2.0.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-jui.git",
+            "reference": "843a2160cfe30f5c8b0cb2e9dbd8ee6bcf97e71d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-jui/zipball/843a2160cfe30f5c8b0cb2e9dbd8ee6bcf97e71d",
+            "reference": "843a2160cfe30f5c8b0cb2e9dbd8ee6bcf97e71d",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery-ui": "1.11.*@stable",
+            "yiisoft/yii2": ">=2.0.4"
+        },
+        "time": "2016-07-22 22:26:59",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            },
+            "asset-installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\jui\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com"
+            }
+        ],
+        "description": "The Jquery UI extension for the Yii framework",
+        "keywords": [
+            "jQuery UI",
+            "yii2"
+        ]
+    },
+    {
+        "name": "mihaildev/yii2-elfinder",
+        "version": "1.2.1",
+        "version_normalized": "1.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/MihailDev/yii2-elfinder.git",
+            "reference": "0314ca3c15676ed047dc763852b02d2d9dd418ec"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/MihailDev/yii2-elfinder/zipball/0314ca3c15676ed047dc763852b02d2d9dd418ec",
+            "reference": "0314ca3c15676ed047dc763852b02d2d9dd418ec",
+            "shasum": ""
+        },
+        "require": {
+            "studio-42/elfinder": "^2.1.10",
+            "yiisoft/yii2-jui": "*"
+        },
+        "time": "2016-06-30 12:03:17",
+        "type": "yii2-extension",
+        "extra": {
+            "asset-installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "mihaildev\\elfinder\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Mihail",
+                "email": "mihail.kucher@gmail.com",
+                "homepage": "https://github.com/MihailDev",
+                "role": "Developer"
+            }
+        ],
+        "description": "Yii2 ElFinder",
+        "homepage": "https://github.com/MihailDev/yii2-elfinder",
+        "keywords": [
+            "elfinder",
+            "filemanager",
+            "yii"
+        ]
+    },
+    {
+        "name": "mihaildev/yii2-ckeditor",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/MihailDev/yii2-ckeditor.git",
+            "reference": "d20aa7f6bcf610fee226d6eb15212a279875bf87"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/MihailDev/yii2-ckeditor/zipball/d20aa7f6bcf610fee226d6eb15212a279875bf87",
+            "reference": "d20aa7f6bcf610fee226d6eb15212a279875bf87",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "*"
+        },
+        "time": "2014-11-19 22:04:08",
+        "type": "yii2-extension",
+        "extra": {
+            "asset-installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "mihaildev\\ckeditor\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Mihail",
+                "email": "mihail.kucher@gmail.com",
+                "homepage": "https://github.com/MihailDev",
+                "role": "Developer"
+            }
+        ],
+        "description": "Yii2 CKEditor",
+        "homepage": "https://github.com/MihailDev/yii2-ckeditor",
+        "keywords": [
+            "CKEditor",
+            "editor",
+            "wysiwyg",
+            "yii"
+        ]
+    },
+    {
+        "name": "kartik-v/yii2-widget-colorinput",
+        "version": "v1.0.3",
+        "version_normalized": "1.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kartik-v/yii2-widget-colorinput.git",
+            "reference": "3f6e847ef72cf6e27e4d3b4870b00b8f80d51752"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kartik-v/yii2-widget-colorinput/zipball/3f6e847ef72cf6e27e4d3b4870b00b8f80d51752",
+            "reference": "3f6e847ef72cf6e27e4d3b4870b00b8f80d51752",
+            "shasum": ""
+        },
+        "require": {
+            "kartik-v/yii2-krajee-base": "*"
+        },
+        "time": "2016-01-14 11:15:49",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "kartik\\color\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD 3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Kartik Visweswaran",
+                "email": "kartikv2@gmail.com",
+                "homepage": "http://www.krajee.com/"
+            }
+        ],
+        "description": "An enhanced Yii 2 widget encapsulating the HTML 5 color input (sub repo split from yii2-widgets)",
+        "homepage": "https://github.com/kartik-v/yii2-widget-colorinput",
+        "keywords": [
+            "HTML5",
+            "color",
+            "extension",
+            "form",
+            "input",
+            "jquery",
+            "plugin",
+            "widget",
+            "yii2"
+        ]
+    },
+    {
+        "name": "bower-asset/jquery-colorbox",
+        "version": "1.6.4",
+        "version_normalized": "1.6.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jackmoore/colorbox.git",
+            "reference": "bac78120c6ca9e63370cc317ab6f400129cd6608"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jackmoore/colorbox/zipball/bac78120c6ca9e63370cc317ab6f400129cd6608",
+            "reference": "bac78120c6ca9e63370cc317ab6f400129cd6608",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery": ">=1.3.2"
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": "jquery.colorbox.js",
+            "bower-asset-ignore": [
+                "colorbox.jquery.json",
+                "colorbox.ai",
+                "content",
+                "example1/index.html",
+                "example2/index.html",
+                "example3/index.html",
+                "example4/index.html",
+                "example5/index.html"
+            ]
+        },
+        "installation-source": "dist",
+        "description": "jQuery lightbox and modal window plugin",
+        "keywords": [
+            "gallery",
+            "jquery-plugin",
+            "lightbox",
+            "modal",
+            "popup",
+            "ui"
+        ]
+    },
+    {
+        "name": "himiklab/yii2-colorbox-widget",
+        "version": "1.0.3",
+        "version_normalized": "1.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/himiklab/yii2-colorbox-widget.git",
+            "reference": "c4aee292cdeabe03e996eb4396719376c2252602"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/himiklab/yii2-colorbox-widget/zipball/c4aee292cdeabe03e996eb4396719376c2252602",
+            "reference": "c4aee292cdeabe03e996eb4396719376c2252602",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery-colorbox": "*",
+            "yiisoft/yii2": "*"
+        },
+        "time": "2016-02-02 10:23:58",
+        "type": "yii2-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "himiklab\\colorbox\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "HimikLab",
+                "homepage": "https://github.com/himiklab/"
+            }
+        ],
+        "description": "Customizable lightbox widget for Yii2",
+        "keywords": [
+            "colorbox",
+            "lightbox",
+            "widget",
+            "yii2"
+        ]
+    },
+    {
+        "name": "abeautifulsite/simpleimage",
+        "version": "2.6.0",
+        "version_normalized": "2.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/claviska/SimpleImage.git",
+            "reference": "a8fb6f68d12f32e3394a2784c3a8c500bc24cdec"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/a8fb6f68d12f32e3394a2784c3a8c500bc24cdec",
+            "reference": "a8fb6f68d12f32e3394a2784c3a8c500bc24cdec",
+            "shasum": ""
+        },
+        "require": {
+            "ext-gd": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2015-10-22 19:13:41",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.5-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "abeautifulsite": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nazar Mokrynskyi",
+                "email": "nazar@mokrynskyi.com",
+                "homepage": "http://cleverstyle.org/",
+                "role": "Developer"
+            },
+            {
+                "name": "Cory LaViska",
+                "homepage": "http://www.abeautifulsite.net/",
+                "role": "Developer"
+            }
+        ],
+        "description": "A PHP class that simplifies working with images"
+    },
+    {
+        "name": "costa-rico/yii2-images",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/CostaRico/yii2-images.git",
+            "reference": "1de1d40f392589f2de96f840dab8636f46f63b6b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/CostaRico/yii2-images/zipball/1de1d40f392589f2de96f840dab8636f46f63b6b",
+            "reference": "1de1d40f392589f2de96f840dab8636f46f63b6b",
+            "shasum": ""
+        },
+        "require": {
+            "abeautifulsite/simpleimage": "*",
+            "yiisoft/yii2": "*"
+        },
+        "require-dev": {
+            "codeception/specify": "*",
+            "codeception/verify": "*",
+            "mikey179/vfsstream": "1.3.*@dev",
+            "yiisoft/yii2-codeception": "*"
+        },
+        "suggest": {
+            "ext-imagick": ""
+        },
+        "time": "2016-04-14 09:19:24",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "rico\\yii2images\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Rob Rhyne",
+                "email": "rob.rhyne@gmail.com"
+            }
+        ],
+        "description": "yii2 images module for storing images",
+        "keywords": [
+            "Costa Rico",
+            "images",
+            "images store",
+            "store",
+            "yii2",
+            "yii2-images"
         ]
     }
 ]

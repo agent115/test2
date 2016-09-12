@@ -7,7 +7,9 @@ $params = require(__DIR__ . '/params.php');
         'class' => 'yii2mod\comments\Module'
     ],
     'controllerMap' => [
-        'comments' => 'yii2mod\comments\controllers\ManageController'
+        'comments' => 'yii2mod\comments\controllers\ManageController',
+
+
     ] ,
  'authManager' => [
             'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\DbManager'
@@ -15,7 +17,7 @@ $params = require(__DIR__ . '/params.php');
     'mailer' => [
             'class' => 'yii\swiftmailer\Mailer'
             ]
-]
+];
 $ip = $_SERVER['REMOTE_ADDR'];
 //.....
 'params => $params,

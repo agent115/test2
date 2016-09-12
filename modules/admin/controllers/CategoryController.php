@@ -1,6 +1,7 @@
 <?php
 
 namespace app\modules\admin\controllers;
+
 use app\models\Users;
 use Yii;
 use app\modules\admin\models\Category;
@@ -8,6 +9,7 @@ use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * CategoryController implements the CRUD actions for Category model.
@@ -66,6 +68,12 @@ class CategoryController extends Controller
         $model = new Category();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            $model->image = UploadedFile::getInstance($model, 'image');
+            if ($model->image) {
+                $model->upload();
+            }
+            Yii::$app->session->setFlash('success', "Организация {$model->name} добавлена");
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -85,6 +93,12 @@ class CategoryController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            $model->image = UploadedFile::getInstance($model, 'image');
+            if ($model->image) {
+                $model->upload();
+            }
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [

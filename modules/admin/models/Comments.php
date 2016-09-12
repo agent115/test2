@@ -23,9 +23,11 @@ class Comments extends \yii\db\ActiveRecord
         return 'comments';
     }
 
-    public function getCategory(){
-        return $this->hasOne(Category::className(),['id'=>'parent_id']);
+    public function getCategory()
+    {
+        return $this->hasOne(Category::className(), ['id' => 'parent_id']);
     }
+
     /**
      * @inheritdoc
      */

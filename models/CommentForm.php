@@ -35,6 +35,7 @@ class CommentForm extends Model
         ];
     }
 
+
     /**
      * @return array customized attribute labels
      */

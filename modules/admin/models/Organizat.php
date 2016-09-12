@@ -3,6 +3,7 @@
 namespace app\modules\admin\models;
 
 use Yii;
+use yii\web\UploadedFile;
 
 /**
  * This is the model class for table "organizat".
@@ -23,6 +24,19 @@ use Yii;
  */
 class Organizat extends \yii\db\ActiveRecord
 {
+    public $image;
+
+    //public $gallery;
+    public function behaviors()
+    {
+
+        return [
+            'image' => [
+                'class' => 'rico\yii2images\behaviors\ImageBehave',
+            ]
+        ];
+    }
+
     /**
      * @inheritdoc
      */
@@ -31,16 +45,19 @@ class Organizat extends \yii\db\ActiveRecord
         return 'organizat';
     }
 
+
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['category_id', 'phone', 'phone_2', 'adress', 'mars', 'grafic', 'keywords', 'description', 'logo', 'images', 'maps'], 'required'],
+            [['category_id', 'phone'], 'required'],
             [['category_id'], 'integer'],
             [['mars'], 'string'],
-            [['name', 'phone', 'phone_2', 'adress', 'grafic', 'keywords', 'description', 'logo', 'images', 'maps'], 'string', 'max' => 255],
+            [['name', 'phone', 'phone_2', 'adress', 'grafic', 'keywords', 'description', 'logo', 'maps'], 'string', 'max' => 255],
+            [['image'], 'file', 'extensions' => 'png, jpg'],
+            //[['gallery'], 'file',  'extensions' => 'png, jpg', 'maxFiles' => 4]
         ];
     }
 
@@ -61,7 +78,19 @@ class Organizat extends \yii\db\ActiveRecord
             'keywords' => 'Ключевики',
             'description' => 'Описание',
             'logo' => 'Логотип',
-            'images' => 'Картинка',
+            'image' => 'Картинка',
         ];
+    }
+
+    public function upload()
+    {
+        if ($this->validate()) {
+            $path = 'upload/store/' . $this->image->baseName . '.' . $this->image->extension;
+            $this->image->saveAs($path);
+
+            return true;
+        } else {
+            return false;
+        }
     }
 }

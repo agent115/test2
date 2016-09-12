@@ -21,7 +21,12 @@
         "mdmsoft/yii2-admin": "~2.0",
         "yii2mod/yii2-comments": "*",
         "yii2mod/yii2-star-rating": "*",
-        "kartik-v/yii2-widget-rating": "*"
+        "kartik-v/yii2-widget-rating": "*",
+        "mihaildev/yii2-elfinder": "*",
+        "mihaildev/yii2-ckeditor": "*",
+        "kartik-v/yii2-widget-colorinput": "*",
+        "himiklab/yii2-colorbox-widget": "*",
+         "costa-rico/yii2-images": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

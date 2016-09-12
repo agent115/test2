@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'yii\\swiftmailer\\' => array($vendorDir . '/yiisoft/yii2-swiftmailer'),
+    'yii\\jui\\' => array($vendorDir . '/yiisoft/yii2-jui'),
     'yii\\gii\\' => array($vendorDir . '/yiisoft/yii2-gii'),
     'yii\\faker\\' => array($vendorDir . '/yiisoft/yii2-faker'),
     'yii\\debug\\' => array($vendorDir . '/yiisoft/yii2-debug'),
@@ -19,9 +20,14 @@ return array(
     'yii2mod\\editable\\' => array($vendorDir . '/yii2mod/yii2-editable'),
     'yii2mod\\comments\\' => array($vendorDir . '/yii2mod/yii2-comments'),
     'yii2mod\\behaviors\\' => array($vendorDir . '/yii2mod/yii2-behaviors'),
+    'rico\\yii2images\\' => array($vendorDir . '/costa-rico/yii2-images'),
+    'mihaildev\\elfinder\\' => array($vendorDir . '/mihaildev/yii2-elfinder'),
+    'mihaildev\\ckeditor\\' => array($vendorDir . '/mihaildev/yii2-ckeditor'),
     'mdm\\admin\\' => array($vendorDir . '/mdmsoft/yii2-admin'),
     'kartik\\rating\\' => array($vendorDir . '/kartik-v/yii2-widget-rating'),
+    'kartik\\color\\' => array($vendorDir . '/kartik-v/yii2-widget-colorinput'),
     'kartik\\base\\' => array($vendorDir . '/kartik-v/yii2-krajee-base'),
+    'himiklab\\colorbox\\' => array($vendorDir . '/himiklab/yii2-colorbox-widget'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Component\\Translation\\' => array($vendorDir . '/symfony/translation'),

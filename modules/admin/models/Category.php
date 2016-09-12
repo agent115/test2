@@ -17,24 +17,40 @@ class Category extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
+     *
      */
+    public $image;
+
+    public function behaviors()
+    {
+
+        return [
+            'image' => [
+                'class' => 'rico\yii2images\behaviors\ImageBehave',
+            ]
+        ];
+    }
+
     public static function tableName()
     {
         return 'category';
     }
 
-    public function getCategory(){
-        return $this->hasOne(Category::className(),['id'=>'parent_id']);
+    public function getCategory()
+    {
+        return $this->hasOne(Category::className(), ['id' => 'parent_id']);
     }
+
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['parent_id', 'name', 'keywords', 'description'], 'required'],
-            [['parent_id'], 'integer'],
-            [['name', 'keywords', 'description'], 'string', 'max' => 255],
+            [['name',], 'required'],
+
+            [['name', 'description'], 'string', 'max' => 255],
+            [['image'], 'file', 'extensions' => 'png, jpg'],
         ];
     }
 
@@ -45,10 +61,24 @@ class Category extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'parent_id' => 'Организация',
+            //'parent_id' => 'Организация',
             'name' => 'Название',
-            'keywords' => 'Цвет',
-            'description' => 'Картинки',
+            //'keywords' => 'Цвет',
+            //'description' => 'Картинки',
+            'image' => 'Картинка',
         ];
+    }
+
+    public function upload()
+    {
+        if ($this->validate()) {
+            $path = 'upload/store/' . $this->image->baseName . '.' . $this->image->extension;
+            $this->image->saveAs($path);
+            $this->attachImage($path);
+
+            return true;
+        } else {
+            return false;
+        }
     }
 }

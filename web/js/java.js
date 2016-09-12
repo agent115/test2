@@ -1379,7 +1379,8 @@
             // её "ножки" (точки привязки).
             iconImageOffset: [-3, -42]
               });
-              
+
+
               myMap.geoObjects.add(myPlacemark75);
               myMap.geoObjects.add(myPlacemark74);
               myMap.geoObjects.add(myPlacemark73);

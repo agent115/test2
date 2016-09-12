@@ -8,6 +8,7 @@ use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * OrganizatController implements the CRUD actions for Organizat model.
@@ -17,13 +18,14 @@ class OrganizatController extends Controller
     /**
      * @inheritdoc
      */
+
     public function behaviors()
     {
         return [
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['POST','get'],
+                    'delete' => ['POST'],
                 ],
             ],
         ];
@@ -66,6 +68,12 @@ class OrganizatController extends Controller
         $model = new Organizat();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            $model->image = UploadedFile::getInstance($model, 'image');
+            if ($model->image) {
+                $model->upload();
+            }
+            Yii::$app->session->setFlash('success', "Организация {$model->name} добавлена");
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -85,6 +93,12 @@ class OrganizatController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            $model->image = UploadedFile::getInstance($model, 'image');
+            if ($model->image) {
+                $model->upload();
+            }
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
@@ -99,9 +113,11 @@ class OrganizatController extends Controller
      * @param string $id
      * @return mixed
      */
+
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+
+        $this->findModel->delete();
 
         return $this->redirect(['index']);
     }
@@ -118,7 +134,7 @@ class OrganizatController extends Controller
         if (($model = Organizat::findOne($id)) !== null) {
             return $model;
         } else {
-            throw new NotFoundHttpException('The requested page does not exist.');
+            throw new NotFoundHttpException('Запрашиваемой страницы не существует.');
         }
     }
 }
