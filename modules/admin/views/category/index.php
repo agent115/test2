@@ -17,10 +17,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
 
 
-        <?= Html::a('Добавить категорию', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Добавить категорию', ['create'], ['class' => 'btn btn-success',]) ?>
 
 
         <button  type="button" class="btn btn-primary"><a href="<?= \yii\helpers\Url::to(['organizat/index'])?>">Организации</a></button>
+        <button  type="button" class="btn btn-primary"><a href="<?= \yii\helpers\Url::to(['maps/index'])?>">Отметка на карте</a></button>
         <button  type="button" class="btn btn-primary"><a href="<?= \yii\helpers\Url::to(['comments/index'])?>">Комментарии</a></button>
     </p>
     <?= GridView::widget([
@@ -34,8 +35,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'valuer'=> $data->category->name;
                 ],*/
             'name',
-            'keywords',
-            'description',
+            //'keywords',
+            //'description',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

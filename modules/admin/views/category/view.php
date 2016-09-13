@@ -19,20 +19,24 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Delete', ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => 'Вы точно хотите удалить этот элемент?',
                 'method' => 'post',
             ],
         ]) ?>
     </p>
-
+    <?php $img = $model->getImage();?>
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
             'id',
             /*'parent_id',*/
             'name',
-            'keywords',
-            'description',
+            //'keywords',
+            /*[
+                //'attribute' => 'image',
+                //'value' =>"<img src='{$img->getUrl()}'>",
+                //'format'=>'html',
+            ]*/
         ],
     ]) ?>
 

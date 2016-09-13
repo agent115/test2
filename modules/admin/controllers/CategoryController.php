@@ -67,12 +67,16 @@ class CategoryController extends Controller
     {
         $model = new Category();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+            $img = 'images/';
+            $model->description = $img . $model->description;
 
+            $model->save();
             $model->image = UploadedFile::getInstance($model, 'image');
             if ($model->image) {
                 $model->upload();
             }
+
             Yii::$app->session->setFlash('success', "Организация {$model->name} добавлена");
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -93,6 +97,7 @@ class CategoryController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
 
             $model->image = UploadedFile::getInstance($model, 'image');
             if ($model->image) {

@@ -64,7 +64,7 @@ class Category extends \yii\db\ActiveRecord
             //'parent_id' => 'Организация',
             'name' => 'Название',
             //'keywords' => 'Цвет',
-            //'description' => 'Картинки',
+            'description' => 'Введите название картинки',
             'image' => 'Картинка',
         ];
     }
@@ -72,9 +72,14 @@ class Category extends \yii\db\ActiveRecord
     public function upload()
     {
         if ($this->validate()) {
-            $path = 'upload/store/' . $this->image->baseName . '.' . $this->image->extension;
+            $path = 'images/' . $this->image->baseName . '.' . $this->image->extension;
+            //$this->attachImage($path);
+
             $this->image->saveAs($path);
-            $this->attachImage($path);
+
+
+           /* $this->attachImage($path);
+            @unlink($path);*/
 
             return true;
         } else {

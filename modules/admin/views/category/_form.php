@@ -17,6 +17,7 @@ use himiklab\colorbox\Colorbox;
     <?php // $form->field($model, 'parent_id')->textInput(['maxlength' => true]) ?>
     <!-- --><? /*= $form->field($model, 'parent_id')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\Category::find()->all(), 'id', 'name')) */ ?>
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'description')->textInput(array('placeholder' => 'Введите название картинки (Пример: name.png  или image.jpg )')) ?>
 
 
     <?php

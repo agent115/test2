@@ -24,7 +24,7 @@ AppAsset::register($this);
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         
-   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>   
+
 
         
             <?php $this->head() ?>
@@ -303,5 +303,7 @@ AppAsset::register($this);
 
 <?php $this->endBody() ?>
     </body>
+
 </html>
 <?php $this->endPage() ?>
+

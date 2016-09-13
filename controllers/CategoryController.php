@@ -6,13 +6,15 @@ use app\controllers\AppController;
 use app\models\Category;
 use app\models\Organizat;
 use app\models\Ip;
+use app\models\Maps;
 
 use Yii;
 class CategoryController extends AppController{
    
     function actionIndex(){
+        $maps = Maps::find()->all();
         $category = Category::find()->all();
-        return $this->render('index', compact('category'));
+        return $this->render('index', compact('category','maps'));
     }
     
     function actionCateg(){

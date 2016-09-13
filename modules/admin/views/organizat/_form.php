@@ -20,7 +20,7 @@ mihaildev\elfinder\Assets::noConflict($this);
 
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
-    <?= $form->field($model, 'category_id')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\Organizat::find()->all(), 'id', 'name')) ?>
+    <?= $form->field($model, 'category_id')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\Category::find()->all(), 'id', 'name')) ?>
 
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
