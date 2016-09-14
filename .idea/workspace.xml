@@ -6,80 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9e0a2140-dde9-4409-9068-dc6beac85fbe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/AppAsset.php" afterPath="$PROJECT_DIR$/assets/AppAsset.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/AdminController.php" afterPath="$PROJECT_DIR$/controllers/AdminController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/AppAdminController.php" afterPath="$PROJECT_DIR$/controllers/AppAdminController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/AppController.php" afterPath="$PROJECT_DIR$/controllers/AppController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/CategoryController.php" afterPath="$PROJECT_DIR$/controllers/CategoryController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/IndexController.php" afterPath="$PROJECT_DIR$/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/OrganizatController.php" afterPath="$PROJECT_DIR$/controllers/OrganizatController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/Organizat_1Controller.php" afterPath="$PROJECT_DIR$/controllers/Organizat_1Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/SiteController.php" afterPath="$PROJECT_DIR$/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Admin.php" afterPath="$PROJECT_DIR$/models/Admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Arrcom.php" afterPath="$PROJECT_DIR$/models/Arrcom.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Category.php" afterPath="$PROJECT_DIR$/models/Category.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/ComentForm.php" afterPath="$PROJECT_DIR$/models/ComentForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Comment.php" afterPath="$PROJECT_DIR$/models/Comment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/CommentForm.php" afterPath="$PROJECT_DIR$/models/CommentForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Comments.php" afterPath="$PROJECT_DIR$/models/Comments.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/ContactForm.php" afterPath="$PROJECT_DIR$/models/ContactForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/ContactForms.php" afterPath="$PROJECT_DIR$/models/ContactForms.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Ip.php" afterPath="$PROJECT_DIR$/models/Ip.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Login.php" afterPath="$PROJECT_DIR$/models/Login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/LoginForm.php" afterPath="$PROJECT_DIR$/models/LoginForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Maps.php" afterPath="$PROJECT_DIR$/models/Maps.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Organizat.php" afterPath="$PROJECT_DIR$/models/Organizat.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Organizat_1.php" afterPath="$PROJECT_DIR$/models/Organizat_1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Raitip.php" afterPath="$PROJECT_DIR$/models/Raitip.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Signup.php" afterPath="$PROJECT_DIR$/models/Signup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Testform.php" afterPath="$PROJECT_DIR$/models/Testform.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/User.php" afterPath="$PROJECT_DIR$/models/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Users.php" afterPath="$PROJECT_DIR$/models/Users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/Module.php" afterPath="$PROJECT_DIR$/modules/admin/Module.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/AppAdminController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/AppAdminController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/CategoryController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/CategoryController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/MapsController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/MapsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/layout/_main.php" afterPath="$PROJECT_DIR$/modules/admin/layout/_main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/Category.php" afterPath="$PROJECT_DIR$/modules/admin/models/Category.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/Maps.php" afterPath="$PROJECT_DIR$/modules/admin/models/Maps.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/Organizat.php" afterPath="$PROJECT_DIR$/modules/admin/models/Organizat.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/Comments/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/Comments/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/Maps/_form.php" afterPath="$PROJECT_DIR$/modules/admin/views/Maps/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/Maps/create.php" afterPath="$PROJECT_DIR$/modules/admin/views/Maps/create.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/Maps/view.php" afterPath="$PROJECT_DIR$/modules/admin/views/Maps/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/category/_form.php" afterPath="$PROJECT_DIR$/modules/admin/views/category/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/category/create.php" afterPath="$PROJECT_DIR$/modules/admin/views/category/create.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/category/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/category/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/category/update.php" afterPath="$PROJECT_DIR$/modules/admin/views/category/update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/category/view.php" afterPath="$PROJECT_DIR$/modules/admin/views/category/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/layouts/admin.php" afterPath="$PROJECT_DIR$/modules/admin/views/layouts/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/organizat/_form.php" afterPath="$PROJECT_DIR$/modules/admin/views/organizat/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/organizat/create.php" afterPath="$PROJECT_DIR$/modules/admin/views/organizat/create.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/organizat/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/organizat/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/_form.php" afterPath="$PROJECT_DIR$/views/admin/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/index.php" afterPath="$PROJECT_DIR$/views/admin/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/category/categ.php" afterPath="$PROJECT_DIR$/views/category/categ.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/category/dar.php" afterPath="$PROJECT_DIR$/views/category/dar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/category/index.php" afterPath="$PROJECT_DIR$/views/category/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/category/search.php" afterPath="$PROJECT_DIR$/views/category/search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/category/view.php" afterPath="$PROJECT_DIR$/views/category/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index/contact.php" afterPath="$PROJECT_DIR$/views/index/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/_main.php" afterPath="$PROJECT_DIR$/views/layouts/_main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/admin.php" afterPath="$PROJECT_DIR$/views/layouts/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/main.php" afterPath="$PROJECT_DIR$/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/view.php" afterPath="$PROJECT_DIR$/views/layouts/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/organizat/view.php" afterPath="$PROJECT_DIR$/views/organizat/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/com.php" afterPath="$PROJECT_DIR$/views/site/com.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/comment.php" afterPath="$PROJECT_DIR$/views/site/comment.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/contact.php" afterPath="$PROJECT_DIR$/views/site/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/error.php" afterPath="$PROJECT_DIR$/views/site/error.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/index.php" afterPath="$PROJECT_DIR$/views/site/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/login.php" afterPath="$PROJECT_DIR$/views/site/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/logo.php" afterPath="$PROJECT_DIR$/views/site/logo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/signup.php" afterPath="$PROJECT_DIR$/views/site/signup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/site.css" afterPath="$PROJECT_DIR$/web/css/site.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/java.js" afterPath="$PROJECT_DIR$/web/js/java.js" />
     </list>
     <ignored path="agent1156.myjino.ru.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,109 +30,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/admin/views/Maps/_form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="169" selection-start-line="14" selection-start-column="135" selection-end-line="14" selection-end-column="169" />
-              <folding>
-                <element signature="e#7#28#0#PHP" expanded="true" />
-                <marker date="1473862816573" expanded="true" signature="635:689" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/admin/views/organizat/_form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="22" column="160" selection-start-line="22" selection-start-column="160" selection-end-line="22" selection-end-column="160" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/admin/views/category/_form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/category/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="221">
+              <caret line="22" column="9" selection-start-line="17" selection-start-column="4" selection-end-line="22" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="categ.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="categ.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/category/categ.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="13" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/site/contact.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/category/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Organizat.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/admin/models/Organizat.php">
+        <entry file="file://$PROJECT_DIR$/models/Organizat.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
+            <state relative-caret-position="255">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/site/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/site/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/site/logo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signup.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/site/signup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-              <folding>
-                <marker date="1473863940659" expanded="true" signature="61:687" ph="..." />
-                <marker date="1473863940659" expanded="true" signature="83:680" ph="..." />
-                <marker date="1473863940659" expanded="true" signature="114:669" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -224,7 +97,6 @@
         <option value="$PROJECT_DIR$/models/Login.php" />
         <option value="$PROJECT_DIR$/models/LoginForm.php" />
         <option value="$PROJECT_DIR$/models/Maps.php" />
-        <option value="$PROJECT_DIR$/models/Organizat.php" />
         <option value="$PROJECT_DIR$/models/Organizat_1.php" />
         <option value="$PROJECT_DIR$/models/Raitip.php" />
         <option value="$PROJECT_DIR$/models/Signup.php" />
@@ -245,7 +117,6 @@
         <option value="$PROJECT_DIR$/modules/admin/models/Maps.php" />
         <option value="$PROJECT_DIR$/modules/admin/views/Maps/view.php" />
         <option value="$PROJECT_DIR$/modules/admin/Module.php" />
-        <option value="$PROJECT_DIR$/views/category/index.php" />
         <option value="$PROJECT_DIR$/views/category/search.php" />
         <option value="$PROJECT_DIR$/views/category/dar.php" />
         <option value="$PROJECT_DIR$/views/category/view.php" />
@@ -257,7 +128,6 @@
         <option value="$PROJECT_DIR$/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/views/site/com.php" />
         <option value="$PROJECT_DIR$/views/site/comment.php" />
-        <option value="$PROJECT_DIR$/views/site/contact.php" />
         <option value="$PROJECT_DIR$/views/site/error.php" />
         <option value="$PROJECT_DIR$/views/site/index.php" />
         <option value="$PROJECT_DIR$/views/site/login.php" />
@@ -266,6 +136,9 @@
         <option value="$PROJECT_DIR$/modules/admin/models/Organizat.php" />
         <option value="$PROJECT_DIR$/modules/admin/views/organizat/_form.php" />
         <option value="$PROJECT_DIR$/views/category/categ.php" />
+        <option value="$PROJECT_DIR$/models/Organizat.php" />
+        <option value="$PROJECT_DIR$/views/site/contact.php" />
+        <option value="$PROJECT_DIR$/views/category/index.php" />
       </list>
     </option>
   </component>
@@ -310,6 +183,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -338,34 +214,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agent1156.myjino.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agent1156.myjino.ru" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="category" />
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -464,18 +319,19 @@
       <workItem from="1473708029393" duration="2325000" />
       <workItem from="1473752756152" duration="19840000" />
       <workItem from="1473788762916" duration="4602000" />
-      <workItem from="1473849204795" duration="13653000" />
+      <workItem from="1473849204795" duration="13995000" />
+      <workItem from="1473880315530" duration="2259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260154000" />
+    <option name="totallyTimeSpent" value="262755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20801815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21104388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -537,19 +393,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controllers/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/AppAdminController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -557,7 +404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -565,7 +411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="98" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -573,7 +418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -581,7 +425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -589,7 +432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -605,7 +447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -613,7 +454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -621,7 +461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -629,7 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -637,7 +475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="89" column="47" selection-start-line="0" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,7 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -653,15 +489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/models/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -669,7 +496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,7 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,7 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="33" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,7 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,7 +524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="18" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -709,15 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-46">
           <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/category/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -725,7 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="64" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,7 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -741,7 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,7 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -757,7 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,7 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,7 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,7 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,7 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,7 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,7 +608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,7 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -821,7 +622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,7 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,7 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -845,15 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/site/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -861,7 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -869,7 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -893,20 +680,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding>
-            <marker date="1473863940659" expanded="true" signature="61:687" ph="..." />
-            <marker date="1473863940659" expanded="true" signature="83:680" ph="..." />
-            <marker date="1473863940659" expanded="true" signature="114:669" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/admin/views/Maps/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="221">
           <caret line="14" column="169" selection-start-line="14" selection-start-column="135" selection-end-line="14" selection-end-column="169" />
           <folding>
-            <element signature="e#7#28#0#PHP" expanded="true" />
+            <element signature="e#7#28#0#PHP" expanded="false" />
             <marker date="1473862816573" expanded="true" signature="635:689" ph="..." />
           </folding>
         </state>
@@ -914,7 +697,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/admin/models/Organizat.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
+        <state relative-caret-position="1173">
           <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
           <folding />
         </state>
@@ -930,24 +713,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/admin/views/category/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="357">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/models/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/category/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="22" selection-end-column="9" />
+        <state relative-caret-position="221">
+          <caret line="22" column="9" selection-start-line="17" selection-start-column="4" selection-end-line="22" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Organizat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/category/categ.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="13" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/category/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding />
         </state>
       </provider>

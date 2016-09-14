@@ -21,8 +21,8 @@ use yii\helpers\Html;
         <?php foreach ($maps as $map):?>
         myPlacemark<?= $map->id?> = new ymaps.Placemark([<?= $map->maps?>], {
             balloonContentHeader: '<?= $map->title ?> ',
-
             balloonContentBody: ' <a href="<?= $map->link?>">Ссылка на организацию</a>',
+
 
         }, {
             // Опции.
@@ -74,6 +74,7 @@ use yii\helpers\Html;
                 <div class="col-md-4 col-sm-6">
 
                     <div class="service-wrapper">
+
                         <a href="<?= \yii\helpers\Url::to(['category/view', 'id' => $cat['id']]) ?>"> <?= Html::img("@web/{$cat-> description}", ['class' => 'img']) ?></a>
                         <h3>
                             <a href="<?= \yii\helpers\Url::to(['category/view', 'id' => $cat['id']]) ?>"><?= $cat->name; ?></a>

@@ -12,6 +12,12 @@ $this->title = 'Контактная форма';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <title>Обратная связь</title>
+<ul class="breadcrumb">
+    <li><a href="<?= \yii\helpers\Url::home() ?>"><i class="glyphicon glyphicon-home"> </i> Главная</a> <span
+            class="divider">/</span></li>
+    <li>обратная связь</li>
+
+</ul>
 <div class="site-contact container">
     <h1><?= Html::encode($this->title) ?></h1>
 

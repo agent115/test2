@@ -12,6 +12,7 @@ class Organizat extends ActiveRecord
         return 'organizat';
     }
 
+
     public function getCategory()
     {
         return $this->hasOne(Organizat::className(), ['id' => 'category_id']);

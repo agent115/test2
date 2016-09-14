@@ -6,7 +6,12 @@ use yii\helpers\Html;
 
 ?>
 
+<ul class="breadcrumb">
+    <li><a href="<?= \yii\helpers\Url::home() ?>"><i class="glyphicon glyphicon-home"> </i> Главная</a> <span
+            class="divider">/</span></li>
+    <li>категории</li>
 
+</ul>
 <div class="section" id="cats">
     <div class="container">
         <div class="row">
