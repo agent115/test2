@@ -18,11 +18,12 @@ use yii\helpers\Html;
             zoom: 12
         });
 
-     <?php foreach ($maps as $map):?>
+        <?php foreach ($maps as $map):?>
         myPlacemark<?= $map->id?> = new ymaps.Placemark([<?= $map->maps?>], {
             balloonContentHeader: '<?= $map->title ?> ',
 
-            balloonContentBody: 'Адрес <a href="<?= $map->link?>">ССылка</a>',
+            balloonContentBody: ' <a href="<?= $map->link?>">Ссылка на организацию</a>',
+
         }, {
             // Опции.
             // Необходимо указать данный тип макета.

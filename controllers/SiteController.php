@@ -11,6 +11,7 @@ use app\models\CommentForm;
 use app\models\Login;
 use app\models\ContactForm;
 use app\models\Signup;
+
 class SiteController extends Controller
 {
     /**
@@ -33,7 +34,7 @@ class SiteController extends Controller
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'logout' => ['post','get'],
+                    'logout' => ['post', 'get'],
                 ],
             ],
         ];
@@ -70,28 +71,25 @@ class SiteController extends Controller
      *
      * @return string
      */
-   
-      public function actionLogin()
+
+    public function actionLogin()
     {
-        if(!Yii::$app->user->isGuest)
-        {
+        if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
         $login_model = new LoginForm();
-        if( Yii::$app->request->post('Login'))
-        {
+        if (Yii::$app->request->post('Login')) {
             $login_model->attributes = Yii::$app->request->post('Login');
-            if($login_model->validate())
-            {
+            if ($login_model->validate()) {
                 Yii::$app->user->login($login_model->getUser());
                 return $this->goHome();
             }
         }
-        return $this->render('login',['login_model'=>$login_model]);
+        return $this->render('login', ['login_model' => $login_model]);
     }
-    
-    
-     public function actionLogo()
+
+
+    public function actionLogo()
     {
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
@@ -125,21 +123,17 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
-          $model = new ContactForm();
+        $model = new ContactForm();
 
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['agent1156@yandex.ru'])) {
             Yii::$app->session->setFlash('contactFormSubmitted');
-          
+
 
             return $this->refresh();
         }
         return $this->render('contact', [
             'model' => $model,
-        ]);
-
-
-        
-        /*  $session = Yii::$app->session;
+        ]);/*  $session = Yii::$app->session;
         $session->open();
         
         $model = new ContactForm();
@@ -163,8 +157,6 @@ class SiteController extends Controller
     }
 
 
-    
-
     /**
      * Displays about page.
      *
@@ -174,21 +166,21 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-    
-    public function actionSignup(){
-        
+
+    public function actionSignup()
+    {
+
         $model = new Signup();
-       
-           $model ->attributes = Yii::$app->request->post('Signup');
-           if($model->validate()){
-               $model->signup();
-               return $this->goHome();
-           }
+
+        $model->attributes = Yii::$app->request->post('Signup');
+        if ($model->validate()) {
+            $model->signup();
+            return $this->goHome();
+        }
         return $this->render('signup', compact('model'));
-    
-    
-    
-}
+
+
+    }
 
     public function actionComment()
     {
@@ -205,11 +197,10 @@ class SiteController extends Controller
         ]);
 
 
-
-
     }
 
-    public function actionCom(){
+    public function actionCom()
+    {
         $modelcom = new CommentForm();
 
         if ($modelcom->load(Yii::$app->request->post()) && $modelcom->contact(Yii::$app->params['agent1156@yandex.ru'])) {
@@ -218,6 +209,6 @@ class SiteController extends Controller
 
             return $this->refresh();
         }
-        return $this->render('com',compact('modelcom'));
+        return $this->render('com', compact('modelcom'));
     }
 }

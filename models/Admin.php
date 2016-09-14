@@ -1,11 +1,14 @@
 <?php
 
 namespace app\models;
+
 use yii\db\ActiveRecord;
 
-class Admin extends ActiveRecord{
+class Admin extends ActiveRecord
+{
 
-    public static function tableName() {
+    public static function tableName()
+    {
         return 'auth_assignment';
     }
 

@@ -5,6 +5,7 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\swiftmailer\Mailer;
+
 /**
  * ContactForm is the model behind the contact form.
  */
@@ -26,12 +27,12 @@ class CommentForm extends Model
     {
         return [
             // name, email, subject and body are required
-            [['name', 'email', 'subject', 'body','nomer'], 'required'],
+            [['name', 'email', 'subject', 'body', 'nomer'], 'required'],
             // email has to be a valid email address
             ['email', 'email'],
             // verifyCode needs to be entered correctly
             ['verifyCode', 'captcha'],
-            [ ['nomer'],'number'],
+            [['nomer'], 'number'],
         ];
     }
 
@@ -43,10 +44,10 @@ class CommentForm extends Model
     {
         return [
             'verifyCode' => 'Введите ключ',
-            'name'=>'Имя',
-            'body'=>'Описание жалобы',
-            'subject'=>'Наименование ',
-            'nomer'=>'Контактрый телефон'
+            'name' => 'Имя',
+            'body' => 'Описание жалобы',
+            'subject' => 'Наименование ',
+            'nomer' => 'Контактрый телефон'
         ];
     }
 
@@ -67,7 +68,6 @@ class CommentForm extends Model
                 ->setTextBody($this->nomer)
                 ->setTextBody($this->comment_id)
                 ->setTextBody($this->body)
-
                 ->send();
 
             return true;

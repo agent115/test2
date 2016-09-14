@@ -10,7 +10,7 @@ use himiklab\colorbox\Colorbox;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="category-form">
+<div class="category-form container">
 
     <?php $form = ActiveForm::begin(); ?>
 

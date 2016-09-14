@@ -1,12 +1,14 @@
 <?php
 
 namespace app\models;
+
 use yii\db\ActiveRecord;
 
 class Users extends ActiveRecord implements \yii\web\IdentityInterface
 {
 
-    public static function tableName(){
+    public static function tableName()
+    {
         return 'users';
     }
 
@@ -29,7 +31,7 @@ class Users extends ActiveRecord implements \yii\web\IdentityInterface
     /**
      * Finds user by username
      *
-     * @param  string      $username
+     * @param  string $username
      * @return static|null
      */
     public static function findByUsername($username)
@@ -64,7 +66,7 @@ class Users extends ActiveRecord implements \yii\web\IdentityInterface
     /**
      * Validates password
      *
-     * @param  string  $password password to validate
+     * @param  string $password password to validate
      * @return boolean if password provided is valid for current user
      */
     public function validatePassword($password)
@@ -73,7 +75,8 @@ class Users extends ActiveRecord implements \yii\web\IdentityInterface
         return \Yii::$app->security->validatePassword($password, $this->password);
     }
 
-    public function generateAuthKey(){
+    public function generateAuthKey()
+    {
         $this->auth_key = \Yii::$app->security->generateRandomString();
     }
 }

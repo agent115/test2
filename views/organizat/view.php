@@ -41,9 +41,18 @@ use yii\widgets\ActiveForm;
                         <div class="maps"><?= $ord->mars ?></div>
                         <h3><?= $ord->name ?></a></h3>
                         <p><i class="glyphicon glyphicon-earphone"></i>Телефон:<?= $ord->phone ?></p>
-                        <p><i class="glyphicon glyphicon-earphone"></i>Телефон:<?= $ord->phone_2 ?></p>
-                        <p><i class="glyphicon glyphicon-map-marker"></i>Адрес:<?= $ord->adress ?></p>
-                        <p><i class="glyphicon glyphicon-time"></i>График:<?= $ord->grafic ?></p>
+                        <?php if (!empty($ord->phone_2)): ?>
+
+                            <?php ifelse: ?>
+                            <p><i class="glyphicon glyphicon-earphone"></i>Телефон:<?= $ord->phone_2 ?></p>
+                        <?php endif; ?>
+                        <?php if (!empty($ord->adress)): ?>
+
+                            <p><i class="glyphicon glyphicon-map-marker"></i>Адрес:<?= $ord->adress ?></p>
+                        <?php endif; ?>
+                        <?php if (!empty($ord->grafic)): ?>
+                            <p><i class="glyphicon glyphicon-time"></i>График:<?= $ord->grafic ?></p>
+                        <?php endif; ?>
                         <pre><?= $ord->keywords ?></pre>
 
                     <?php endforeach; ?>

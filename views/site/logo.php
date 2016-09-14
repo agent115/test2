@@ -13,7 +13,6 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="site-login container">
     <h1><?= Html::encode($this->title) ?></h1>
 
-    
 
     <?php $form = ActiveForm::begin([
         'id' => 'login-form',
@@ -24,23 +23,23 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]); ?>
 
-        <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
+    <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
 
-        <?= $form->field($model, 'password')->passwordInput() ?>
-        
-  <?= $form->field($model, 'rememberMe')->checkbox([
-            'template' => "<div class=\"col-lg-offset-1 col-lg-3\">{input} {label}</div>\n<div class=\"col-lg-8\">{error}</div>",
-        ]) ?>
-     
-        
-        <div class="form-group">
-            <div class="col-lg-offset-1 col-lg-11">
-                <?= Html::submitButton('ЗАЙТИ', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
-            </div>
+    <?= $form->field($model, 'password')->passwordInput() ?>
+
+    <?= $form->field($model, 'rememberMe')->checkbox([
+        'template' => "<div class=\"col-lg-offset-1 col-lg-3\">{input} {label}</div>\n<div class=\"col-lg-8\">{error}</div>",
+    ]) ?>
+
+
+    <div class="form-group">
+        <div class="col-lg-offset-1 col-lg-11">
+            <?= Html::submitButton('ЗАЙТИ', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
         </div>
+    </div>
 
     <?php ActiveForm::end(); ?>
 
-     <span class="col-md-offset-1"><a href="<?= yii\helpers\Url::to(['site/signup'])?>">Регистрация</a></span>
-   <span style="margin-left:40px;"> <a href="<?= yii\helpers\Url::to([])?>">Забыл пароль</a></span>
+    <span class="col-md-offset-1"><a href="<?= yii\helpers\Url::to(['site/signup']) ?>">Регистрация</a></span>
+    <span style="margin-left:40px;"> <a href="<?= yii\helpers\Url::to([]) ?>">Забыл пароль</a></span>
 </div>

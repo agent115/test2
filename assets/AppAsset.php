@@ -39,7 +39,7 @@ class AppAsset extends AssetBundle
         "js/main-menu.js",
         "js/template.js",
         'js/js.js',
-        'js/java.js',
+        //'js/java.js',
         'js/main.js',
         'js/java1.js',
         'js/jRatingjquery.js',

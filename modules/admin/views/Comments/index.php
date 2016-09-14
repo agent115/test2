@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
 
         <button  type="button" class="btn btn-primary"><a href="<?= \yii\helpers\Url::to(['category/index'])?>">Категории</a></button>
-
+        <button  type="button" class="btn btn-primary"><a href="<?= \yii\helpers\Url::to(['maps/index'])?>">Отметка на карте</a></button>
         <button  type="button" class="btn btn-primary"><a href="<?= \yii\helpers\Url::to(['organizat/index'])?>">Организации</a></button>
 
     </p>

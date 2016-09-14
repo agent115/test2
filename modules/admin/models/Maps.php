@@ -30,9 +30,10 @@ class Maps extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'maps', 'images', 'link','adress'], 'required'],
-           // [['parent_id'], 'integer'],
-            [['title', 'maps', 'images', 'link'], 'string', 'max' => 255]
+            [['title', 'maps'], 'required'],
+            // [['parent_id'], 'integer'],
+            [['title', 'maps', 'images', 'link'], 'string', 'max' => 255],
+            [['maps'], 'string', 'min' => 23]
         ];
     }
 
@@ -43,11 +44,11 @@ class Maps extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Название',
+            'title' => ' ',
             'adress' => 'Адрес',
             'link' => 'Ссылка',
             'images' => 'Картинка из категории',
-            'maps'=>'Координаты'
+            'maps' => 'Координаты'
         ];
     }
 }

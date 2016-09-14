@@ -1,11 +1,14 @@
 <?php
 
 namespace app\models;
+
 use yii\db\ActiveRecord;
 
-class Ip extends ActiveRecord{
+class Ip extends ActiveRecord
+{
 
-    public static function tableName() {
+    public static function tableName()
+    {
         return 'ip';
     }
 

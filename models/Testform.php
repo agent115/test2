@@ -1,15 +1,19 @@
 <?php
 namespace app\models;
+
 use yii\base\Model;
 use  yii\db\ActiveRecord;
 
-class Testform extends ActiveRecord {
+class Testform extends ActiveRecord
+{
 
-	public static function tableName(){
+    public static function tableName()
+    {
         return 'comments';
     }
 
-      public function attributeLabels(){
+    public function attributeLabels()
+    {
         return [
             'comment_author' => 'Имя',
             'parent_id' => 'Маил',
@@ -17,10 +21,11 @@ class Testform extends ActiveRecord {
         ];
     }
 
-    public function rules(){
+    public function rules()
+    {
         return [
-            [ ['comment_author', 'comment_text'], 'required' ],
-            [ ['comment_text', 'parent_id'], 'trim' ],
+            [['comment_author', 'comment_text'], 'required'],
+            [['comment_text', 'parent_id'], 'trim'],
         ];
     }
 }

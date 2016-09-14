@@ -4,7 +4,8 @@ namespace app\models;
 
 use Yii;
 use yii\base\Model;
- use yii\swiftmailer\Mailer;
+use yii\swiftmailer\Mailer;
+
 /**
  * ContactForm is the model behind the contact form.
  */
@@ -17,7 +18,7 @@ class ContactForm extends Model
     public $body;
     public $verifyCode;
     public $nomer;
-    
+
 
     /**
      * @return array the validation rules.
@@ -26,12 +27,12 @@ class ContactForm extends Model
     {
         return [
             // name, email, subject and body are required
-            [['name', 'email', 'subject', 'body','nomer'], 'required'],
+            [['name', 'email', 'subject', 'body', 'nomer'], 'required'],
             // email has to be a valid email address
             ['email', 'email'],
             // verifyCode needs to be entered correctly
             ['verifyCode', 'captcha'],
-            [ ['nomer'],'number'],
+            [['nomer'], 'number'],
         ];
     }
 
@@ -42,10 +43,10 @@ class ContactForm extends Model
     {
         return [
             'verifyCode' => 'Введите ключ',
-            'name'=>'Имя',
-            'body'=>'Описание организации',
-            'subject'=>'Наименование организации',
-            'nomer'=>'Контактрый телефон'
+            'name' => 'Имя',
+            'body' => 'Описание организации',
+            'subject' => 'Наименование организации',
+            'nomer' => 'Контактрый телефон'
         ];
     }
 
@@ -54,10 +55,10 @@ class ContactForm extends Model
      * @param string $email the target email address
      * @return boolean whether the model passes validation
      */
-     
+
     public function contact($email)
     {
-        
+
         if ($this->validate()) {
             Yii::$app->mailer->compose()
                 ->setTo("agent1156@yandex.ru")
@@ -65,7 +66,6 @@ class ContactForm extends Model
                 ->setSubject($this->subject)
                 ->setSubject($this->nomer)
                 ->setTextBody($this->body)
-                
                 ->send();
 
             return true;

@@ -22,7 +22,7 @@ class AdminController extends \app\controllers\AppAdminController
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['POST','get'],
+                    'delete' => ['POST', 'get'],
                 ],
             ],
         ];

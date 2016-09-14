@@ -68,7 +68,7 @@ class Organizat extends \yii\db\ActiveRecord
     {
         return [
             'id' => '№',
-            'category_id' => 'Категория',
+            'category_id' => '',
             'name' => 'Название',
             'phone' => 'Телефон',
             'phone_2' => 'Телефон 2',

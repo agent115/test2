@@ -78,8 +78,8 @@ class Category extends \yii\db\ActiveRecord
             $this->image->saveAs($path);
 
 
-           /* $this->attachImage($path);
-            @unlink($path);*/
+            /* $this->attachImage($path);
+             @unlink($path);*/
 
             return true;
         } else {

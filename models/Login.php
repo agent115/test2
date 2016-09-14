@@ -1,23 +1,27 @@
 <?php
 namespace app\models;
+
 use app\models\Users;
 use yii\base\Model;
+
 class Login extends Model
 {
     public $username;
     public $password;
     public $rememberMe = true;
-     private $_user = false;
+    private $_user = false;
+
     public function rules()
     {
         return [
-            [['username','password'],'required'],
+            [['username', 'password'], 'required'],
 
-            ['password','validatePassword'] //собственная функция для валидации пароля
+            ['password', 'validatePassword'] //собственная функция для валидации пароля
         ];
     }
 
-    public function attributeLabels(){
+    public function attributeLabels()
+    {
         return [
             'username' => 'Логин',
             'password' => 'Пароль',
@@ -25,30 +29,29 @@ class Login extends Model
         ];
     }
 
-    public function validatePassword($attribute,$params)
+    public function validatePassword($attribute, $params)
     {
-        if(!$this->hasErrors()) // если нет ошибок в валидации
+        if (!$this->hasErrors()) // если нет ошибок в валидации
         {
             $user = $this->getUser(); // получаем пользователя для дальнейшего сравнения пароля
-            if(!$user || !$user->validatePassword($this->password))
-            {
+            if (!$user || !$user->validatePassword($this->password)) {
                 //если мы НЕ нашли в базе такого пользователя
                 //или введенный пароль и пароль пользователя в базе НЕ равны ТО,
-                $this->addError($attribute,'Пароль/логин введены неверно');
+                $this->addError($attribute, 'Пароль/логин введены неверно');
                 //добавляем новую ошибку для атрибута password о том что пароль или имейл введены не верно
             }
         }
     }
 
-     public function login()
+    public function login()
     {
         if ($this->validate()) {
-            if($this->rememberMe){
+            if ($this->rememberMe) {
                 $u = $this->getUser();
                 $u->generateAuthKey();
                 $u->save();
             }
-            return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600*24*30 : 0);
+            return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
         }
         return false;
     }

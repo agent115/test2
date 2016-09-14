@@ -323,7 +323,7 @@ function init() {
     });
 
     myPlacemark18 = new ymaps.Placemark([43.16177650, 44.15524600], {
-        balloonContentHeader: 'IDSNEI МАГАЗИН ЖЕНСКОЙ ОДЕЖДЫ',
+        balloonContentHeader: 'DISNEI МАГАЗИН ЖЕНСКОЙ ОДЕЖДЫ',
 
         balloonContentBody: 'Адрес <a href="http://agent1156.myjino.ru/web/organizat/25">ССылка</a>',
     }, {

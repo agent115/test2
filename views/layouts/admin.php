@@ -10,33 +10,33 @@
 use app\assets\AppAsset;
 use yii\helpers\Html;
 AppAsset::register($this);
-?>   
-            
+?>
+
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 
 
 <head>
-    
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-          
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        
-   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>   
 
-        
+   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+
             <?php $this->head() ?>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        
+
 <?php $this->beginBody() ?>
         <!-- Navigation & Logo-->
-        <div class="mainmenu-wrapper">
+        <div class="admin" style="background: #979797">
 	        <div class="container">
 	        	<div class="menuextras">
 					<div class="extras">
@@ -48,10 +48,10 @@ AppAsset::register($this);
 
                                                   <?php if(!Yii::$app->user->isGuest): ?>
     <li><a href="<?= yii\helpers\Url::to(['/site/logout'])?>"><i class="fa fa-user"></i>  <?= Yii::$app->user->identity['username']?> (Выход)</a></li>
-                                                                                
+
                                                                                 <?php endif;?>
-                                                
-                                               
+
+
 			        	</ul>
 					</div>
 		        </div>
@@ -62,9 +62,9 @@ AppAsset::register($this);
 							<a href="<?=  \yii\helpers\Url::home()?>">ГЛАВНАЯ</a>
 						</li>
 						<li>
-							<a href="<?=  \yii\helpers\Url::to(['/rbac/default/index'])?>">Пользователи</a>
+							<a href="<?=  \yii\helpers\Url::to(['/rbac/default/index'])?>">ПОЛЬЗОВАТЕЛИ</a>
 						</li>
-						
+
 						<li>
 							<a href="<?=  \yii\helpers\Url::to(['/site/contact'])?>">ОБРАТНАЯ СВЯЗЬ</a>
 						</li>
@@ -74,7 +74,7 @@ AppAsset::register($this);
 		</div>
 
         <!-- Homepage Slider -->
-        
+
         <!-- End Homepage Slider -->
 <?= $content ?>
 		<!-- Press Coverage -->
@@ -148,24 +148,24 @@ AppAsset::register($this);
 		</div>-->
 		<!-- End Call to Action Bar -->
 
-<!--		 Testimonials 
+<!--		 Testimonials
 	    <div class="section">
 			<div class="container">
 				<h2>Testimonials</h2>
 				<div class="row">
-					 Testimonial 
+					 Testimonial
 					<div class="testimonial col-md-4 col-sm-6">
-						 Author Photo 
+						 Author Photo
 						<div class="author-photo">
 							<img src="img/user1.jpg" alt="Author 1">
 						</div>
 						<div class="testimonial-bubble">
 							<blockquote>
-								 Quote 
+								 Quote
 								<p class="quote">
 		                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
                         		</p>
-                        		 Author Info 
+                        		 Author Info
                         		<cite class="author-info">
                         			- Name Surname,<br>Managing Director at <a href="#">Some Company</a>
                         		</cite>
@@ -173,7 +173,7 @@ AppAsset::register($this);
                         	<div class="sprite arrow-speech-bubble"></div>
                         </div>
                     </div>
-                     End Testimonial 
+                     End Testimonial
                     <div class="testimonial col-md-4 col-sm-6">
 						<div class="author-photo">
 							<img src="img/user5.jpg" alt="Author 2">
@@ -216,17 +216,17 @@ AppAsset::register($this);
 	    	<div class="container">
 	    		<h2>Pricing</h2>
 	        	<div class="row">
-	        		 Pricing Plans Wrapper 
+	        		 Pricing Plans Wrapper
 	        		<div class="pricing-wrapper col-md-12">
-        				 Pricing Plan 
+        				 Pricing Plan
 						<div class="pricing-plan">
-							 Pricing Plan Ribbon 
+							 Pricing Plan Ribbon
 							<div class="ribbon-wrapper">
 								<div class="price-ribbon ribbon-red">Popular</div>
 							</div>
 							<h2 class="pricing-plan-title">Starter</h2>
 							<p class="pricing-plan-price">FREE</p>
-							 Pricing Plan Features 
+							 Pricing Plan Features
 							<ul class="pricing-plan-features">
 								<li><strong>1</strong> user</li>
 								<li><strong>Unlimited</strong> projects</li>
@@ -234,7 +234,7 @@ AppAsset::register($this);
 							</ul>
 							<a href="index.html" class="btn">Order Now</a>
 						</div>
-						 End Pricing Plan 
+						 End Pricing Plan
 					    <div class="pricing-plan">
 							<h2 class="pricing-plan-title">Advanced</h2>
 							<p class="pricing-plan-price">$49<span>/mo</span></p>
@@ -245,7 +245,7 @@ AppAsset::register($this);
 								</ul>
 							<a href="index.html" class="btn">Order Now</a>
 					    </div>
-					     Promoted Pricing Plan 
+					     Promoted Pricing Plan
 					    <div class="pricing-plan pricing-plan-promote">
 								<h2 class="pricing-plan-title">Premium</h2>
 								<p class="pricing-plan-price">$99<span>/mo</span></p>
@@ -257,7 +257,7 @@ AppAsset::register($this);
 							<a href="index.html" class="btn">Order Now</a>
 					    </div>
 					    <div class="pricing-plan">
-					    	 Pricing Plan Ribbon 
+					    	 Pricing Plan Ribbon
 							<div class="ribbon-wrapper">
 								<div class="price-ribbon ribbon-green">New</div>
 							</div>
@@ -271,21 +271,21 @@ AppAsset::register($this);
 							<a href="index.html" class="btn">Order Now</a>
 					    </div>
 	        		</div>
-	        		 End Pricing Plans Wrapper 
+	        		 End Pricing Plans Wrapper
 	        	</div>
 	    	</div>
 	    </div>-->
 	    <!-- End Pricing Table -->
 
 		<!-- Our Clients -->
-	
+
 
 	    <!-- Footer -->
 	    <div class="footer">
 	    	<div class="container">
 		    	<div class="row">
 		    		<div class="col-footer col-md-3 col-xs-6">
-		    			
+
 		    	</div>
 		    	<div class="row">
 		    		<div class="col-md-12">
@@ -294,7 +294,13 @@ AppAsset::register($this);
 		    	</div>
 		    </div>
 	    </div>
-
+<style>
+	.admin{
+		background-color: #979797;
+		border-bottom: 4px solid #4f8db3;
+		z-index: 4;
+	}
+</style>
 
 <?php $this->endBody() ?>
     </body>

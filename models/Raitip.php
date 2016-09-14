@@ -1,11 +1,14 @@
 <?php
 
 namespace app\models;
+
 use yii\db\ActiveRecord;
 
-class Raitip extends ActiveRecord{
+class Raitip extends ActiveRecord
+{
 
-    public static function tableName() {
+    public static function tableName()
+    {
         return 'rait_ip';
     }
 

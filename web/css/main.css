@@ -470,6 +470,11 @@ a:hover {
 .clients-logo-wrapper img {
   max-width: 100%;
 }
+.logo-wrapper-ad  img{
+  max-width: 40%;
+  opacity: 0;
+}
+
 /*--------------------------------------------------------------------------
 +	News Style
 --------------------------------------------------------------------------*/
@@ -1713,6 +1718,17 @@ span.color-red {
   box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
   color: 0 -1px 12px rgba(0,0,0,0.4);
 }
+.footers {
+  background-image: url("/web/images/admin.jpg");
+  color: #A0A0A0;
+  padding: 0 20px 10px 20px;
+  border-top: 4px solid #4f8db3;
+  margin-top: 20px;
+  -webkit-box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
+  color: 0 -1px 12px rgba(0,0,0,0.4);
+}
 .footer h3 {
   color: #E4E4E4;
   font-size: 1.3em;
@@ -2375,6 +2391,14 @@ span.color-red {
   border-bottom: 4px solid #4f8db3;
   z-index: 4;
 }
+
+.admin {
+  background-image:url("/web/images/admin.jpg");
+  background-position-y:top;
+  border-bottom: 4px solid #4f8db3;
+  z-index: 4;
+}
+
 .mainmenu {
   width: 100%;
   /* general ul style */
@@ -2536,13 +2560,57 @@ span.color-red {
 .menuextras .extras li {
   padding: 0 8px;
 }
-.menuextras .extras li a {
-  color: #333;
+/********************/
+.menuextrass {
+  font-size: 0.85em;
+  height: 30px;
 }
+.menuextrass ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right;
+  padding: 3px 0;
+}
+.menuextrass li {
+  float: left;
+  padding: 0 8px;
+}
+.menuextrass .extras li {
+  padding: 0 8px;
+}
+.menuextrass .extras li a {
+   color: #333;
+ }
+.menuextrass .extras li a {
+  color: #a3a3a3;
+}
+
 .menuextras .extras li a:hover {
   color: #333;
   text-decoration: none;
 }
+
+.menuextrass .extras .shopping-cart-items i {
+  color: #333;
+}
+.menuextrass .choose-country .dropdown-menu {
+  background-color: #222;
+  background-color: rgba(34, 34, 34, 0.8);
+  margin-top: 5px;
+}
+.menuextrass .choose-country .dropdown-menu li {
+  float: none;
+}
+.menuextrass .choose-country .dropdown-menu li a {
+  color: #fff;
+  padding-left: 3px;
+}
+.menuextrass .choose-country .dropdown-menu li a:hover {
+  color: #fff;
+  background-color: #333 !important;
+}
+
 .menuextras .extras .shopping-cart-items i {
   color: #333;
 }
