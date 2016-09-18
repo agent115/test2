@@ -50,7 +50,7 @@ class Comments extends \yii\db\ActiveRecord
             'parent_id' => 'Организация',
             'name' => 'Название',
             'keywords' => 'Цвет',
-            'description' => 'Картинки',
+            'comment_text' => 'текс',
         ];
     }
 }

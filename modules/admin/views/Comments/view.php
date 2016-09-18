@@ -10,19 +10,27 @@ $this->title = $model->comment_id;
 $this->params['breadcrumbs'][] = ['label' => 'Comments', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="comments-view">
+<div class="comments-view container">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->comment_id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->comment_id], [
+       <!-- --><?/*= Html::a('Обновить', ['update', 'id' => $model->comment_id], ['class' => 'btn btn-primary']) */?>
+        <?= Html::a('Удалить', ['delete', 'id' => $model->comment_id], ['class' => 'btn btn-primary'],[
+            'data'=>[
+                'confirm'=>'Уверен ?',
+            ]
+        ]) ?>
+
+
+
+       <!-- --><?/*= Html::a('Удалить', ['delete', 'id' => $model->comment_id], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
+                //'confirm' => 'Уверен ?',
+                'method' => 'GET'
             ],
-        ]) ?>
+        ]) */?>
     </p>
 
     <?= DetailView::widget([

@@ -6,10 +6,11 @@
 }
 .img {
     width: 45px;
-   
+
 }
 #logo{
     width: 300px;
+
 }
 
 #time{
@@ -79,9 +80,13 @@
     color:  #e5b71f;;
 }
 
+.container-fluid{
+
+}
 
 
-@media only screen and (min-width:241px) and (max-width:480px) { 
+
+@media only screen and (min-width:241px) and (max-width:480px) {
  .service-wrapper{
     max-width: 150px;
 }
@@ -99,8 +104,8 @@
 
 
 
-@media only screen and (min-width:480px) and (max-width:780px) { 
- 
+@media only screen and (min-width:480px) and (max-width:780px) {
+
 #poisc{
     width:300px;
 }
@@ -110,5 +115,77 @@
 
 
 
+
+}
+
+
+@media only screen and (min-width:990px) and (max-width:1500px) {
+
+
+    .main{
+
+        width: 500px;
+    }
+
+
+}
+@media only screen and (min-width:990px) and (max-width:1200px) {
+
+    #poisc{
+        max-width:400px;
+    }
+    .service-wrapper{
+
+        min-width: 300px;
+    }
+    #logo{
+        margin-left: 25px;
+    }
+
+
+
+}
+
+@media only screen and (min-width:600px) and (max-width:990px) {
+
+    #poisc{
+        width:50%;
+        margin-left: 10px;
+    }
+    #ser{
+            min-width: 100px;
+    }
+    .service-wrapper{
+
+         width: 70%;
+     }
+    #logo{
+        margin-left: 25px;
+    }
+
+
+}
+@media only screen and (min-width:200px) and (max-width:555px) {
+    #poisc{
+        width:80%;
+
+    }
+
+    .service-wrapper{
+
+          min-width: 90%;
+      }
+    .service-wrapper a {
+
+        min-width: 90%;
+    }
+
+     #ser{
+
+     }
+
+     #maps{
+         width: 300px;
+     }
 
 }

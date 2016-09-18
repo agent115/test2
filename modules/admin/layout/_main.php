@@ -59,22 +59,36 @@ AppAsset::register($this);
                     </ul>
                 </div>
             </div>
-            <nav id="mainmenu" class="mainmenu">
-                <ul>
-                    <li class="logo-wrapper"><a
-                            href="<?= \yii\helpers\Url::home() ?>"><?= Html::img("@web/images/logo.png", ['id' => 'logo']) ?></a>
-                    </li>
-                    <li class="active">
-                        <a href="<?= \yii\helpers\Url::home() ?>">ГЛАВНАЯ</a>
-                    </li>
-                    <li>
-                        <a href="<?= \yii\helpers\Url::to(['/category/categ']) ?>">КАТЕГОРИИ</a>
-                    </li>
+            <a href="<?= yii\helpers\Url::home() ?> "><?= Html::img("@web/images/logo.png", ['id' => 'logo','class'=>'text-center']) ?></a>
+            <nav id="mainmenu" class="mainmenu navbar navbar-default main" >
 
-                    <li>
-                        <a href="<?= \yii\helpers\Url::to(['/site/contact']) ?>">ОБРАТНАЯ СВЯЗЬ</a>
-                    </li>
-                </ul>
+                <div class="container-fluid">
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+
+                            <li class="active">
+                                <a href="<?= \yii\helpers\Url::to(['category/index'])?>">ГЛАВНАЯ</a>
+                            </li>
+                            <li>
+                                <a href="<?= \yii\helpers\Url::to(['/category/categ']) ?>">КАТЕГОРИИ</a>
+                            </li>
+
+                            <li>
+                                <a href="<?= \yii\helpers\Url::to(['/site/contact']) ?>">ОБРАТНАЯ СВЯЗЬ</a>
+                            </li>
+                        </ul>
+                    </div>
             </nav>
         </div>
     </div>

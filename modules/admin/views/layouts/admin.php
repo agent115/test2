@@ -62,9 +62,7 @@ AppAsset::register($this);
             </div>
             <nav id="mainmenu" class="mainmenu">
                 <ul>
-                    <li class="logo-wrapper-ad">
-                        <a href="<?= \yii\helpers\Url::home() ?>"><?= Html::img("@web/images/adm.jpg", ['id' => 'logo']) ?></a>
-                    </li>
+
                     <li class="active">
                         <a href="<?= \yii\helpers\Url::home() ?>">ГЛАВНАЯ</a>
                     </li>

@@ -19,9 +19,13 @@ use yii\helpers\Html;
         });
 
         <?php foreach ($maps as $map):?>
+
         myPlacemark<?= $map->id?> = new ymaps.Placemark([<?= $map->maps?>], {
             balloonContentHeader: '<?= $map->title ?> ',
-            balloonContentBody: ' <a href="<?= $map->link?>">Ссылка на организацию</a>',
+
+            balloonContentBody: ' <a href="/web/<?= $map->link?>">Ссылка на организацию</a>',
+
+
 
 
         }, {

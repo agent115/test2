@@ -10,9 +10,12 @@ class Organizat extends ActiveRecord
     public static function tableName()
     {
         return 'organizat';
+
     }
 
-
+    /**
+     * @return \yii\db\ActiveQuery
+     */
     public function getCategory()
     {
         return $this->hasOne(Organizat::className(), ['id' => 'category_id']);

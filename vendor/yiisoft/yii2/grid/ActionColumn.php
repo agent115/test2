@@ -158,7 +158,7 @@ class ActionColumn extends Column
                 $options = array_merge([
                     'title' => Yii::t('yii', 'Delete'),
                     'aria-label' => Yii::t('yii', 'Delete'),
-                    'data-confirm' => Yii::t('yii', 'Are you sure you want to delete this item?'),
+                    'data-confirm' => Yii::t('yii', 'Вы уверенный ?'),
                     'data-method' => 'post',
                     'data-pjax' => '0',
                 ], $this->buttonOptions);

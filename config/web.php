@@ -25,39 +25,14 @@ $config = [
             'defaultRoute' => 'category/index'
         ],
 
-        'rbac' => [
-            'class' => 'mdm\admin\Module',
-            'controllerMap' => [
-                'assignment' => [
-                    'class' => 'mdm\admin\controllers\AssignmentController',
-                    /* 'userClassName' => 'app\models\User', */
-                    'idField' => 'id',
-                    'usernameField' => 'username'
 
-                ],
-            ],
-            'layout' => 'left-menu',
-            'mainLayout' => '@app/views/layouts/main.php'
-        ]
     ],
-    'as access' => [
-        'class' => 'mdm\admin\components\AccessControl',
-        'allowActions' => [
-            'site/*',
-            'admin/*',
-            'rbac/*',
-            'admin/category/index',
-            'category/*',
-            'organizat/*',
-        ]
-    ],
+
 
     'components' => [
-        'authManager' => [
-            'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\DbManager'
-        ],
-        'request' => [
 
+        'request' => [
+            //'baseUrl' => '/name_folder',
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => '123',
             /* 'baseUrl'->' '*/
@@ -66,8 +41,9 @@ $config = [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'identityClass' => 'mdm\admin\models\User',
-            'loginUrl' => ['rbac/user/login'],
+            'identityClass' => 'app\models\Users',
+            'enableAutoLogin' => true,
+//            'loginUrl' => 'cart/view'
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',

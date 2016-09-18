@@ -7,10 +7,12 @@ use app\models\Organizat;
 use app\models\Comments;
 use app\models\Testform;
 use yii\db\ActiveRecord;
+use Yii;
 
 
 class Organizat_1Controller extends AppController
 {
+
 
     function actionView()
     {

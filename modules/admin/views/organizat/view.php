@@ -10,16 +10,16 @@ $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Organizats', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="organizat-view">
+<div class="organizat-view container">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
+        <?= Html::a('Обновит', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Удалить', ['del', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                //'confirm' => 'Вы уверенный ?',
                 'method' => 'post',
             ],
         ]) ?>
@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'mars:ntext',
             'grafic',
             'keywords',
-            'description',
+            'description:html',
             'logo',
             'images',
             'maps',

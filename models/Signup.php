@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-use app\models\User;
+use app\models\Users;
 
 use yii\base\Model;
 
@@ -21,8 +21,17 @@ class Signup extends Model
             [['email', 'username', 'password'], 'required'],
             ['email', 'email'],
             ["password", 'string', 'min' => 2, 'max' => 10],
-            ['email', 'unique', 'targetClass' => 'app\models\User'],
-            ['username', 'unique', 'targetClass' => 'app\models\User']
+            ['email', 'unique', 'targetClass' => 'app\models\Users'],
+            ['username', 'unique', 'targetClass' => 'app\models\Users']
+        ];
+    }
+
+    public function attributeLabels()
+    {
+        return [
+            'username' => 'Имя',
+            'password' => 'Пароль',
+            'email' => 'Е-маил',
         ];
     }
 
@@ -42,11 +51,12 @@ class Signup extends Model
         $user = new Users();
         $user->email = $this->email;
         $user->username = $this->username;
-        $user->password = \Yii::$app->security->generatePasswordHash($password);  //sha1($this->password);
+
+        $user->password =  \Yii::$app->security->generatePasswordHash($this->password);  //sha1($this->password);
         /* if($this->rememberMe){
          $user->auth_key = \Yii::$app->security->generateRandomString($auth_key);
          }*/
-        $user->auth_key = $this->generateAttributeLabel($auth_key);
+        $user->auth_key = $this->generateAttributeLabel($user->auth_key);
         $user->save();
     }
 }

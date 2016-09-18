@@ -74,18 +74,17 @@ class SiteController extends Controller
 
     public function actionLogin()
     {
-        if (!Yii::$app->user->isGuest) {
+        if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
         }
-        $login_model = new LoginForm();
-        if (Yii::$app->request->post('Login')) {
-            $login_model->attributes = Yii::$app->request->post('Login');
-            if ($login_model->validate()) {
-                Yii::$app->user->login($login_model->getUser());
-                return $this->goHome();
-            }
+
+        $model = new LoginForm();
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            return $this->goBack();
         }
-        return $this->render('login', ['login_model' => $login_model]);
+        return $this->render('login', [
+            'model' => $model,
+        ]);
     }
 
 
@@ -133,27 +132,7 @@ class SiteController extends Controller
         }
         return $this->render('contact', [
             'model' => $model,
-        ]);/*  $session = Yii::$app->session;
-        $session->open();
-        
-        $model = new ContactForm();
-        if( $model->load(Yii::$app->request->post()) ){
-            
-            if($model->send()){
-                
-                Yii::$app->session->setFlash('success', 'Ваш заказ принят. Менеджер вскоре свяжется с Вами.')
-            
-                    ->setFrom(['agent1156@yandex.ru' => 'yii2.loc'])
-                    ->setTo($order->email)
-                    ->setSubject('Заказ')
-                    ->send();
-              
-                return $this->refresh();
-            }else{
-                Yii::$app->session->setFlash('error', 'Ошибка оформления заказа');
-            }
-        }
-        return $this->render('contact', compact('model'))*/;
+        ]);
     }
 
 
@@ -170,14 +149,14 @@ class SiteController extends Controller
     public function actionSignup()
     {
 
-        $model = new Signup();
+        $models = new Signup();
 
-        $model->attributes = Yii::$app->request->post('Signup');
-        if ($model->validate()) {
-            $model->signup();
+        $models->attributes = Yii::$app->request->post('Signup');
+        if ($models->validate()) {
+            $models->signup();
             return $this->goHome();
         }
-        return $this->render('signup', compact('model'));
+        return $this->render('signup', compact('models'));
 
 
     }

@@ -116,9 +116,15 @@ class OrganizatController extends Controller
 
     public function actionDelete($id)
     {
+        $this->findModel($id)->delete();
 
-        $this->findModel->delete();
+        return $this->redirect(['index']);
+    }
 
+    protected function actionDel($id)
+    {
+        $del = $this->findModel($id);
+        $del->delete();
         return $this->redirect(['index']);
     }
 
@@ -134,7 +140,7 @@ class OrganizatController extends Controller
         if (($model = Organizat::findOne($id)) !== null) {
             return $model;
         } else {
-            throw new NotFoundHttpException('Запрашиваемой страницы не существует.');
+            throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
 }

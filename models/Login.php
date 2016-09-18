@@ -1,20 +1,20 @@
 <?php
 namespace app\models;
 
-use app\models\Users;
+use app\models\User;
 use yii\base\Model;
 
 class Login extends Model
 {
     public $username;
-    public $password;
+    public $password_hash;
     public $rememberMe = true;
     private $_user = false;
 
     public function rules()
     {
         return [
-            [['username', 'password'], 'required'],
+            [['username', 'password_hash'], 'required'],
 
             ['password', 'validatePassword'] //собственная функция для валидации пароля
         ];
@@ -24,7 +24,7 @@ class Login extends Model
     {
         return [
             'username' => 'Логин',
-            'password' => 'Пароль',
+            'password_hash' => 'Пароль',
             'rememberMe' => 'Запомнить',
         ];
     }

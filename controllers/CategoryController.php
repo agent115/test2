@@ -18,6 +18,7 @@ class CategoryController extends AppController
     {
         $maps = Maps::find()->all();
         $category = Category::find()->all();
+
         return $this->render('index', compact('category', 'maps'));
     }
 

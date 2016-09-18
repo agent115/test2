@@ -11,4 +11,8 @@ class Maps extends ActiveRecord
         return 'maps';
     }
 
+    public function getOrganizat()
+    {
+        return $this->hasMany(Maps::className(), ['parent_id' => 'id']);
+    }
 }
